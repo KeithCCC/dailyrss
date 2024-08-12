@@ -21,6 +21,26 @@ def extract_rss_urls(website_url):
 
     return rss_urls
 
+def display_feed():
+    
+    if row_to_select in st.session_state.news_df.index:
+        rss_feeds = extract_rss_urls(news_df.loc[row_to_select, 'URL'])
+    for item in rss_feeds:
+        feed = feedparser.parse(item)
+        for entry in feed.entries:
+            # st.write(entry.link)
+            if 'published' in entry:
+                st.text(entry.published)
+            title_line =f"<p style='font-size:18px; color:yellow;'>{entry.title}</p>"
+            st.markdown(title_line,  unsafe_allow_html=True)
+            if entry.summary:
+                st.write(entry.summary)
+            else:
+                st.write("No summary")
+            st.write(entry.link)
+            st.text('---------------------------------')
+    
+
 def ShowFeed():
     try:
         if "news_df" not in st.session_state:
@@ -44,21 +64,45 @@ def ShowFeed():
 
         if btn_sel:
             if row_to_select in st.session_state.news_df.index:
-                rss_feeds = extract_rss_urls(news_df.loc[row_to_select, 'URL'])
-            for item in rss_feeds:
-                feed = feedparser.parse(item)
-                for entry in feed.entries:
-                    # st.write(entry.link)
-                    if 'published' in entry:
-                        st.text(entry.published)
-                    title_line =f"<p style='font-size:18px; color:yellow;'>{entry.title}</p>"
-                    st.markdown(title_line,  unsafe_allow_html=True)
-                    if entry.summary:
-                        st.write(entry.summary)
-                    else:
-                        st.write("No summary")
-                    st.write(entry.link)
-                    st.text('---------------------------------')
+                if news_df.loc[row_to_select, 'Type'] == 'source':
+                    rss_feeds = extract_rss_urls(news_df.loc[row_to_select, 'URL'])
+                else:
+                    rss_feeds = [news_df.loc[row_to_select, 'URL']]
+                for item in rss_feeds:
+                    feed = feedparser.parse(item)
+                    st.text(rss_feeds)
+                    st.text(len(feed))
+                    st.text(feed)
+                    for entry in feed.entries:
+                        st.write(entry.link)
+                        if 'published' in entry:
+                            st.text(entry.published)
+                        title_line =f"<p style='font-size:18px; color:yellow;'>{entry.title}</p>"
+                        st.markdown(title_line,  unsafe_allow_html=True)
+                        if entry.summary:
+                            st.write(entry.summary)
+                        else:
+                            st.write("No summary")
+                        st.write(entry.link)
+                        st.text('---------------------------------')
+                    
+        # if btn_sel:
+        #     if row_to_select in st.session_state.news_df.index:
+        #         rss_feeds = extract_rss_urls(news_df.loc[row_to_select, 'URL'])
+        #     for item in rss_feeds:
+        #         feed = feedparser.parse(item)
+        #         for entry in feed.entries:
+        #             # st.write(entry.link)
+        #             if 'published' in entry:
+        #                 st.text(entry.published)
+        #             title_line =f"<p style='font-size:18px; color:yellow;'>{entry.title}</p>"
+        #             st.markdown(title_line,  unsafe_allow_html=True)
+        #             if entry.summary:
+        #                 st.write(entry.summary)
+        #             else:
+        #                 st.write("No summary")
+        #             st.write(entry.link)
+        #             st.text('---------------------------------')
         
         if btn_today:
             if row_to_select in st.session_state.news_df.index:

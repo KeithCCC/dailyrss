@@ -23,6 +23,7 @@ def manage_sites():
     # Add a new row
     st.write("Add a new site:")
     new_site_title = st.text_input("title")
+    new_site_type = st.selectbox("Type", ["source", "rss"])
     new_site_url = st.text_input("site url")
     new_site_uri = st.text_input("site uri")
     new_site_description = st.text_input("site new_site_description")
@@ -30,7 +31,7 @@ def manage_sites():
 
     if st.button("Add site"):
         if new_site_url:
-            new_row = pd.DataFrame({'Title': [new_site_title],'URL': [new_site_url], 'URI': [new_site_uri], 'Description': [new_site_description]})
+            new_row = pd.DataFrame({'Title': [new_site_title],'URL': [new_site_url], 'URI': [new_site_uri], 'Description': [new_site_description], 'Type': [new_site_type]})
             st.session_state.news_df = pd.concat([st.session_state.news_df, new_row], ignore_index=True)
             # st.experimental_user()
 
@@ -47,7 +48,7 @@ def manage_sites():
     st.dataframe(news_df)
     if st.button('Refresh Data'):
     # Your data fetching logic here
-        filename = "default.json"
+        filename = "newsfeed.json"
         with open(filename, 'w') as file:
             news_df.to_json(filename, orient='records')
         st.write('Data refreshed!')
