@@ -8,13 +8,13 @@ import pandas as pd
 import os
 import re
 
-def extract_rss_urls(website_url):
+def extract_urls_title(website_url):
     response = requests.get(website_url)
     soup = BeautifulSoup(response.content, 'html.parser')
 
     rss_urls = []
     for link in soup.find_all('link', type='application/rss+xml'):
-        rss_urls.append(link.get('href'))
+        rss_urls.append([link.get('title'), link.get('href')])
 
     return rss_urls
 
@@ -40,11 +40,14 @@ def is_xml_or_rdf(url):
     # Check if the URL ends with .xml or .rdf
     if url.lower().endswith(('.xml', '.rdf')):
         return True
+def is_rdf_extension(url):
+    # Check if the URL ends with '.xml'
+    return url.lower().endswith('.rdf')
 
 def manage_sites(df):
     st.title("Add new sits or rss")
     
-    st.table(df)
+    st.text(df['Title'])
     message = "site or rss url"
     
     # Add a new row
@@ -53,18 +56,25 @@ def manage_sites(df):
     new_site_label = st.text_input("site label")
     
     if st.button("Add site"):
-            #rss_feeds = extract_rss_urls(st.session_state["source"]["url"])
         if is_valid_url(new_site_url):
-            if is_xml_or_rdf(new_site_url):
-                rss_feeds = extract_rss_urls(new_site_url)
-            else:
+            st.text(new_site_url)
+            if is_rdf_extension(new_site_url):
                 rss_feeds.append('URL')
+            else:
+                rss_feeds = extract_urls_title(new_site_url)
                 
-            for item in rss_feeds:
-                feed = feedparser.parse(item)
-                for entry in feed.entries:
-                    new_row = pd.DataFrame({'Title': [entry.title],'URL': [entry.link], 'URI': [entry.link], 'Description': [entry.summary], 'Type': [new_site_label]})
-                    st.session_state.news_df = pd.concat([st.session_state.news_df, new_row], ignore_index=True)
+            for row in rss_feeds:
+                col1, col2 = st.columns([3, 1])  # Adjust the proportions as needed
+
+                with col1:
+                    st.write(row[0],row[1])
+
+                # Display the first action button in the second column
+                with col2:
+                    if st.button("add", key=row[1]):
+                        st.text("Added {row[1]")
+
+    
         else:
             message = "Enter site or rss url again"
                            

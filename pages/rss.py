@@ -26,15 +26,15 @@ def rss_task(df):
         col1, col2, col3, col4 = st.columns([3, 1, 1, 1])  # Adjust the proportions as needed
 
         with col1:
-            st.write(row_as_list[6]+":  "+row_as_list[3])
+            st.write(row_as_list[6],row_as_list[3])
 
         # Display the first action button in the second column
         with col2:
-            if st.button("rss"):
+            if st.button("Show rss"):
                 rss_show = row_as_list[3]
                 
         with col3:
-            if st.button("rss today"):
+            if st.button("Show rss today"):
                 rss_show = row_as_list[3]
         
         with col4:
