@@ -68,24 +68,25 @@ def ShowFeed():
                     rss_feeds = extract_rss_urls(news_df.loc[row_to_select, 'URL'])
                 else:
                     rss_feeds = [news_df.loc[row_to_select, 'URL']]
+                    
                 for item in rss_feeds:
                     feed = feedparser.parse(item)
                     st.text(rss_feeds)
                     st.text(len(feed))
                     st.text(feed)
                     for entry in feed.entries:
-                        st.write(entry.link)
+                        # st.write(entry.link)
                         if 'published' in entry:
                             st.text(entry.published)
                         title_line =f"<p style='font-size:18px; color:yellow;'>{entry.title}</p>"
                         st.markdown(title_line,  unsafe_allow_html=True)
-                        if entry.summary:
-                            st.write(entry.summary)
-                        else:
-                            st.write("No summary")
+                        # if entry.summary:
+                        #     st.write(entry.summary)
+                        # else:
+                        #     st.write("No summary")
                         st.write(entry.link)
                         st.text('---------------------------------')
-                    
+                st.text('End all date feeds')    
         # if btn_sel:
         #     if row_to_select in st.session_state.news_df.index:
         #         rss_feeds = extract_rss_urls(news_df.loc[row_to_select, 'URL'])
@@ -107,21 +108,24 @@ def ShowFeed():
         if btn_today:
             if row_to_select in st.session_state.news_df.index:
                 rss_feeds = extract_rss_urls(news_df.loc[row_to_select, 'URL'])
-            for item in rss_feeds:
-                feed = feedparser.parse(item)
-                for entry in feed.entries:
-                    if 'published' in entry:
-                        published_date = datetime.strptime(entry.published, '%a, %d %b %Y %H:%M:%S %z').date()
-                        if published_date == datetime.today().date():
+                for item in rss_feeds:
+                    feed = feedparser.parse(item)
+                    for entry in feed.entries:
+                        today= datetime.today().date() 
+                        st.text(published_date + '::' + today)
+                        if published_date == today:
+                            if 'published' in entry:
+                                published_date = datetime.strptime(entry.published, '%a, %d %b %Y %H:%M:%S %z').date()
                             st.text(entry.published)
                             title_line =f"<p style='font-size:18px; color:yellow;'>{entry.title}</p>"
                             st.markdown(title_line,  unsafe_allow_html=True)                
-                            if entry.summary:
-                                st.write(entry.summary)
-                            else:
-                                st.write("No summary")
+                            # if entry.summary:
+                            #     st.write(entry.summary)
+                            # else:
+                            #     st.write("No summary")
                             st.write(entry.link)
                             st.text('---------------------------------')
+            st.text('End today date feeds')    
     except:
         pass               
  
