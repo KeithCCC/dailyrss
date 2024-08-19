@@ -56,6 +56,7 @@ def manage_sites(df):
     new_site_label = st.text_input("site label")
     
     if st.button("Add site"):
+        rss_feeds = []
         if is_valid_url(new_site_url):
             st.text(new_site_url)
             if is_rdf_extension(new_site_url):
@@ -73,6 +74,7 @@ def manage_sites(df):
                 with col2:
                     if st.button("add", key=row[1]):
                         st.text("Added {row[1]")
+                        #to do add to df
 
     
         else:
