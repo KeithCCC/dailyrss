@@ -40,18 +40,18 @@ def sample_df():
     return sample_df 
 
 def main():
-    if "default_df" not in st.session_state:
-        # st.session_state["default_df"] = ""
+    if "df" not in st.session_state:
+        # st.session_state["df"] = ""
         filename = "default.json"
         if not os.path.exists(filename):
-            default_df = sample_df()
+            df = sample_df()
             with open(filename, 'w') as file:
-                default_df.to_json(filename, orient='records')
+                df.to_json(filename, orient='records')
         else:
-            default_df = pd.read_json(filename)
-        st.session_state["default_df"] = default_df
+            df = pd.read_json(filename)
+        st.session_state["df"] = df
         
-        print(default_df)
+        print(df)
     
     # filename_news= "newsfeed.json"
     # if not os.path.exists(filename_news):
@@ -76,16 +76,16 @@ def main():
     st.title("rss reader") 
     
     st.text("rss")
-    st.text(st.session_state.default_df)
+    st.text(st.session_state.df)
     st.text("---------------------------")
-    st.text(st.session_state["default_df"])
+    st.text(st.session_state["df"])
     # st.text("News")
     # st.text(st.session_state.news_df)
     if st.button("Reset data"):
-        default_df = sample_df()
+        df = sample_df()
         with open("default.json", 'w') as file:
-            default_df.to_json("default.json", orient='records')
-            st.session_state["default_df"] = default_df
+            df.to_json("default.json", orient='records')
+            st.session_state["df"] = df
 
 
 main()
