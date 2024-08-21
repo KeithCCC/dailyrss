@@ -92,10 +92,10 @@ if st.button("Add site"):
                 if st.button("add", key=f"add_key{row}"):
                     st.text("key:",f"Added add_key{row}")
                     #to do add to df
-                    print(f"Added add_key{row}",new_site_label,new_site_url)
-                    new_row = pd.DataFrame({'label': [row[0]],'URL': [row[1]], 'URI': [row[1]]})
-                    # st.dataframe(new_row)
-                    st.session_state.df  = pd.concat([st.session_state.df , new_row], ignore_index=True)
+                    # print(f"Added add_key{row}",new_site_label,new_site_url)
+                    # new_row = pd.DataFrame({'label': [row[0]],'URL': [row[1]], 'URI': [row[1]]})
+                    # # st.dataframe(new_row)
+                    # st.session_state.df  = pd.concat([st.session_state.df , new_row], ignore_index=True)
                     # st.text(st.session_state.df )
                     # print (st.session_state.df )
                     
