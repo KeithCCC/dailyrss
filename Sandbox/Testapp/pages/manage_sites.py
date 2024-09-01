@@ -9,8 +9,8 @@ import os
 
 
 def sample_df():
-    initial_data = [[0,"rss", "@IT", "https://atmarkit.itmedia.co.jp/", "https://atmarkit.itmedia.co.jp/", "Atmark IT"]]
-    sample_df = pd.DataFrame(initial_data, columns=["uid", "Type", "Title", "URL", "URI", "Description"])
+    initial_data = [[0,"rss", "@IT", "https://atmarkit.itmedia.co.jp/", "https://atmarkit.itmedia.co.jp/", "Atmark IT","Tech"]]
+    sample_df = pd.DataFrame(initial_data, columns=["uid", "Type", "Title", "URL", "URI", "Description","label"])
     return sample_df
 
 def display_sites(df):

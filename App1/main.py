@@ -41,7 +41,7 @@ def sample_df():
 
 def main():
     if "df" not in st.session_state:
-        # st.session_state["df"] = ""
+        # st.session_state["df"] = ""   
         filename = "default.json"
         if not os.path.exists(filename):
             df = sample_df()
@@ -51,7 +51,7 @@ def main():
             df = pd.read_json(filename)
         st.session_state["df"] = df
         
-        print(df)
+        # print(df)
     
     # filename_news= "newsfeed.json"
     # if not os.path.exists(filename_news):

@@ -1,1 +1,18 @@
-[{"uid":0.0,"Type":"source","Title":"@IT","URL":"https:\/\/atmarkit.itmedia.co.jp\/","URI":"https:\/\/atmarkit.itmedia.co.jp\/","Description":"Atmark IT"},{"uid":null,"Type":"rss","Title":"Yahoo top pick","URL":"https:\/\/news.yahoo.co.jp\/rss\/topics\/top-picks.xml","URI":"https:\/\/news.yahoo.co.jp\/rss\/topics\/top-picks.xml","Description":""}]
+[
+  {
+    "uid": 0.0,
+    "Type": "source",
+    "Title": "@IT",
+    "URL": "https://atmarkit.itmedia.co.jp/",
+    "URI": "https://atmarkit.itmedia.co.jp/",
+    "Description": "Atmark IT"
+  },
+  {
+    "uid": null,
+    "Type": null,
+    "Title": "https://news.yahoo.co.jp/rss/topics/top-picks.xml",
+    "URL": "https://news.yahoo.co.jp/rss/topics/top-picks.xml",
+    "URI": "https://news.yahoo.co.jp/rss/topics/top-picks.xml",
+    "Description": ""
+  }
+]

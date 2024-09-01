@@ -54,32 +54,6 @@ def rss_task(df):
              
                 
     return df
-            # if st.button("Add site"):
-            #     if new_site_url:
-            #     new_row = pd.DataFrame({'Title': [new_site_title],'URL': [new_site_url], 'URI': [new_site_uri], 'Description': [new_site_description]})
-            #     st.session_state.default_df = pd.concat([st.session_state.default_df, new_row], ignore_index=True)
-                # st.experimental_user()
-
-            # Display the second action button in the third column
-
-                    
-# def rss():
-#     # if "default_df" not in st.session_state:
-#     #         st.session_state["default_df"] = ""
-
-#     # filename = "default.json"
-#     # if not os.path.exists(filename):
-#     #     print('default.json not found')
-#     #     default_df = sample_df()
-#     #     with open(filename, 'w') as file:
-#     #         default_df.to_json(filename, orient='records')
-#     # else:
-#     #     default_df = pd.read_json(filename)
-    
-#     # default_site_list = sites_df[sites_df['Type'] == 'source']
-
-#     df = display_sites(st.session_state["default_df"])
-#     st.session_state["default_df"]=df
     
 df = rss_task(st.session_state["default_df"])
 st.session_state["default_df"]=df

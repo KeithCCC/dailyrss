@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:rdf xml:lang="ja" xmlns="http://purl.org/rss/1.0/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<channel rdf:about="https://pc.watch.impress.co.jp/data/rss/1.0/pcw/feed.rdf">
+<title>PC Watch</title>
+<link/>https://pc.watch.impress.co.jp
+  <description>PC/テクノロジーの総合情報サイト</description>
+<dc:language>ja</dc:language>
+<dc:rights>Copyright (c) 2015 Impress Corporation. All rights reserved.</dc:rights>
+<dc:date>2024-08-17T08:02:52+09:00</dc:date>
+<items>
+<rdf:seq>
+<rdf:li rdf:resource="https://pc.watch.impress.co.jp/docs/column/retro-game-joshi/1616377.html?ref=rss"></rdf:li>
+<rdf:li rdf:resource="https://pc.watch.impress.co.jp/docs/column/config/1616491.html?ref=rss"></rdf:li>
+<rdf:li rdf:resource="https://pc.watch.impress.co.jp/docs/news/1616426.html?ref=rss"></rdf:li>
+<rdf:li rdf:resource="https://pc.watch.impress.co.jp/docs/news/1616418.html?ref=rss"></rdf:li>
+<rdf:li rdf:resource="https://pc.watch.impress.co.jp/docs/news/1616376.html?ref=rss"></rdf:li>
+<rdf:li rdf:resource="https://pc.watch.impress.co.jp/docs/news/streamer_watch/1616366.html?ref=rss"></rdf:li>
+<rdf:li rdf:resource="https://pc.watch.impress.co.jp/docs/news/1616349.html?ref=rss"></rdf:li>
+<rdf:li rdf:resource="https://pc.watch.impress.co.jp/docs/news/1616345.html?ref=rss"></rdf:li>
+<rdf:li rdf:resource="https://pc.watch.impress.co.jp/docs/news/todays_sales/1616335.html?ref=rss"></rdf:li>
+<rdf:li rdf:resource="https://pc.watch.impress.co.jp/docs/news/1616325.html?ref=rss"></rdf:li>
+<rdf:li rdf:resource="https://pc.watch.impress.co.jp/docs/news/todays_sales/1616309.html?ref=rss"></rdf:li>
+<rdf:li rdf:resource="https://pc.watch.impress.co.jp/docs/news/todays_sales/1616292.html?ref=rss"></rdf:li>
+<rdf:li rdf:resource="https://pc.watch.impress.co.jp/docs/news/todays_sales/1616290.html?ref=rss"></rdf:li>
+<rdf:li rdf:resource="https://pc.watch.impress.co.jp/docs/news/1616282.html?ref=rss"></rdf:li>
+...
+  <dc:date>2024-08-16T06:00:00+09:00</dc:date>
+<dc:creator>PC Watch編集部</dc:creator>
+<description><![CDATA[※毎週木曜日にプロ格闘ゲームプレイヤーであるガチくんをパーソナリティに迎え、ストリートファイター6攻略企画「ガチくんに!」をTwitchで配信しています。レギュラー出演者はカワノ、ぷげら、奥村茉実。ここでは当日放送したおおまかな内容を紹介するとともに、YouTubeにアップロードしたアーカイブの動画を掲載しています。]]></description>
+</item>
+</rdf:rdf>
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
