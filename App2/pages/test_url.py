@@ -50,13 +50,37 @@ def sample_df():
     return sample_df 
 
 
-st.title("rss list")
+st.title("Add new sits or rss")
 
-site_list = st.session_state.df.values.tolist()
 
-for row in site_list:
-    col1, col2 = st.columns([3, 1])  # Adjust the proportions as needed
-    with col1:
-        st.write(row[0],row[1],row[2],row[3],row[4],row[5],row[6])
-    # Display the first action button in the second column
-    
+if 'new_site' not in st.session_state:
+    st.session_state["new_site"] = 'none'
+
+st.text(st.session_state.df)
+message = "site or rss url"
+
+# Add a new row
+st.write("Add a new site:")
+new_site_url = st.text_input(message)
+new_site_label = st.text_input("site label")
+
+selected_items = {}
+
+
+if st.button("Test url"):
+    st.session_state.add_site = True
+    rss_feeds = []
+    if is_valid_url(new_site_url):
+        st.text(new_site_url)
+        if is_rdf_extension(new_site_url):
+            rss_feeds.append('URL')
+        else:
+            rss_feeds = extract_urls_title(new_site_url)
+
+        # for i, item in rss_feeds:
+       
+        #     st.checkbox(f"{item['URL']}", key=key)
+
+        for i, item in rss_feeds:
+            key = f"checkbox_{i}"
+            st.checkbox(item,key=key) 

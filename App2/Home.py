@@ -23,3 +23,6 @@ def main():
         else:
             df = pd.read_json(filename)
         st.session_state["df"] = df
+        st.data_editor(df)
+
+main()
