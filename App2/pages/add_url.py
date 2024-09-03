@@ -78,8 +78,9 @@ if st.button("Add site"):
             rss_feeds = extract_urls_title(new_site_url)
         
 
-        for item in rss_feeds:
-            selected_items[item] = st.checkbox(item)
+        for i, item in rss_feeds:
+            key = f"checkbox_{i}"
+            selected_items[item] = st.checkbox(item, key=key)
 
         if st.button('Submit'):
     # Get the list of selected items
