@@ -71,16 +71,40 @@ if st.button("Test url"):
     st.session_state.add_site = True
     rss_feeds = []
     if is_valid_url(new_site_url):
-        st.text(new_site_url)
+        # st.text(new_site_url)
         if is_rdf_extension(new_site_url):
+            st.text("rdf")
             rss_feeds.append('URL')
         else:
+            st.text("not rdf")
             rss_feeds = extract_urls_title(new_site_url)
 
         # for i, item in rss_feeds:
-       
+        checkbox_states = {}
         #     st.checkbox(f"{item['URL']}", key=key)
-
-        for i, item in rss_feeds:
-            key = f"checkbox_{i}"
-            st.checkbox(item,key=key) 
+        st.text(type(rss_feeds))
+        st.text(rss_feeds)
+        
+        # for i, item in rss_feeds:
+        #     key = f"checkbox_{i}"
+        #     checkbox_states[item] = st.checkbox(item[0],key=key) 
+        
+        for index, item in enumerate(rss_feeds):
+            label = item[1]  # Assuming item is a tuple or list and the first element is the label
+            checkbox_key = f"checkbox_{index}"
+            checkbox_states[label] = st.checkbox(label=label, key=checkbox_key)
+        
+        selected_items = []
+        for item in checkbox_states:
+            if checkbox_states[label]:
+                selected_items.append(item)
+        st.write("Selected items:", selected_items)
+        
+        # st.text(checkbox_states)    
+        
+        # selected_items = [item for item in rss_feeds if checkbox_states[item]]
+        # selected_items = []
+        # for item in rss_feeds:
+        #     if checkbox_states[item]:
+        #         selected_items.append(item)
+        # st.write("Selected items:", selected_items)
