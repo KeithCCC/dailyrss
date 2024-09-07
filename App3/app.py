@@ -8,7 +8,6 @@ import os
 import json
 
 
-
 if "df" not in st.session_state:
     # st.session_state["df"] = ""   
     filename = "default.json"
@@ -18,6 +17,8 @@ if "df" not in st.session_state:
     else:
         st.text('default json exist')
         df = pd.read_json(filename)
-    st.session_state["df"] = df
-    
+        st.session_state["df"] = df
+
+
+
 st.data_editor(st.session_state.df)
