@@ -1,0 +1,1307 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html id="masterChannel-ait" lang="ja"><head>
+<meta content="text/html;charset=utf-8" http-equiv="content-type"/>
+<meta content="text/css" http-equiv="content-style-type"/>
+<meta content="text/javascript" http-equiv="content-script-type"/>
+<meta content="no-referrer-when-downgrade" name="referrer"/>
+<meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
+<script>var swspv = '(none)';var cms_summary_flag = '(none)';</script>
+<script src="/js/spv/movePC2SP.js?date=230607163004"></script>
+<!-- FIX DMOZ -->
+<!-- masterType = top -->
+<meta content="noodp" name="robots"/>
+<meta content="noydir" name="robots"/>
+<meta content="A0217C685F39C036AA269B48F707167C" name="msvalidate.01"/>
+<!-- masterType ne article -->
+<meta content="2024年09月07日 12時02分" name="build"/>
+<meta content="＠IT,解説,連載,ニュース,コラム,情報システム,開発,運用管理,インターネット,プログラミング,クラウド,OSS,セキュリティ,ネットワーク,Windows,IoT" name="keywords"/>
+<meta content="プロフェッショナルなIT技術者・管理者のためのコンテンツとコミュニティ満載の問題解決サイト。製品や技術に関する高度な解説記事や、掲示板、質問コーナーなど。" name="description"/>
+<meta content="root/ITmedia/ait/top" name="adpath"/>
+<meta content="zQguCQHPB5SxnBZQBeCTqbv5zFWGI1I_EgfnqL-zu2o" name="google-site-verification">
+<meta content="" name="verify-v1"/>
+<link href="https://atmarkit.itmedia.co.jp/" rel="canonical"/>
+<link href="https://rss.itmedia.co.jp/rss/0.91/ait.xml" rel="alternate" title="＠IT RSS 0.91" type="application/rss+xml"/>
+<link href="https://rss.itmedia.co.jp/rss/1.0/ait.xml" rel="alternate" title="＠IT RSS 1.0" type="application/rss+xml"/>
+<link href="https://rss.itmedia.co.jp/rss/2.0/ait.xml" rel="alternate" title="＠IT RSS 2.0" type="application/rss+xml"/>
+<link href="https://atmarkit.itmedia.co.jp/ait/spv/" media="only screen and (max-width: 640px)" rel="alternate"/>
+<title> ITエキスパートのための問題解決メディア - ＠IT</title>
+<script>
+// 1:クラウド 2:AI IoT 3:DevOps 4:セキュリティ 5:自分研
+function partsGtData(cat){
+if(cat == 1){
+var json = {'data':[
+<!-- CMS index -->
+{'url':'/ait/articles/2409/05/news007.html','title':'「死亡交通事故ゼロ」を目指すSUBARUのAI開発で、コンテナ、Kubernetes、CI/CDはどう生かされているか','subtitle':'Kubernetesクラスタをオンプレミスで構築：','bigicon':'/ait/articles/2409/05/240_news007.jpg','icon':'/ait/articles/2409/05/top_news007.jpg','date':'2024/09/05',},
+{'url':'/ait/articles/2409/06/news009.html','title':'効果的なワークスペースセキュリティ戦略の導入','subtitle':'Gartner Insights Pickup（367）：','bigicon':'/ait/articles/2409/06/240_news009.jpg','icon':'/ait/articles/2409/06/top_news009.jpg','date':'2024/09/06',},
+{'url':'/ait/articles/2409/06/news032.html','title':'【Microsoft Edge】動作が遅い、不安定ならキャッシュクリアを試してみよう！','subtitle':'Tech TIPS：','bigicon':'/ait/articles/2409/06/240_news032.jpg','icon':'/ait/articles/2409/06/top_news032.jpg','date':'2024/09/06',},
+{'url':'/ait/articles/2409/05/news067.html','title':'「Kubernetes v1.31: Elli」公開　セキュリティ向上や運用の効率化につながる45の機能強化を発表','subtitle':'11の機能が正式リリース、22の機能がβに昇格、11の機能がαとして追加：','bigicon':'/ait/articles/2409/05/240_news067.jpg','icon':'/ait/articles/2409/05/top_news067.jpg','date':'2024/09/05',},
+{'url':'/ait/articles/2409/05/news054.html','title':'Linuxディストリビューション「Ubuntu 24.04.1 LTS」公開　新機能は？　サポート期間は？','subtitle':'「Ubuntu日本語Remix」の配布は見送りに：','bigicon':'/ait/articles/2409/05/240_news054.jpg','icon':'/ait/articles/2409/05/top_news054.jpg','date':'2024/09/05',},
+{'url':'/ait/articles/2409/04/news062.html','title':'ハイパーコンバージドシステムが再注目される「3つの理由」とは　IDCが市場予測を発表','subtitle':'仮想化基盤に関する大きな変化も影響：','bigicon':'/ait/articles/2409/04/240_news062.jpg','icon':'/ait/articles/2409/04/top_news062.jpg','date':'2024/09/04',},
+{'url':'/ait/articles/2409/04/news043.html','title':'データセンター向けストレージ市場、2028年までに1030億ドルに急成長　要因は？','subtitle':'2023年は経済的課題とIT支出の減少などを理由に低迷：','bigicon':'/ait/articles/2409/04/240_news043.png','icon':'/ait/articles/2409/04/top_news043.png','date':'2024/09/04',},
+{'url':'/ait/articles/2409/04/news039.html','title':'【Chrome】面倒だからAIへの質問は直接アドレスバーに書きたい（Google Gemini編）','subtitle':'Google Chrome完全ガイド：','bigicon':'/ait/articles/2409/04/240_news039.jpg','icon':'/ait/articles/2409/04/top_news039.jpg','date':'2024/09/04',},
+{'url':'/ait/articles/2409/03/news049.html','title':'全文検索エンジン「Elasticsearch」とデータ可視化ツール「Kibana」が再びオープンソースに','subtitle':'ライセンスオプションとして「AGPL」を追加：','bigicon':'/ait/articles/2409/03/240_news049.jpg','icon':'/ait/articles/2409/03/top_news049.jpg','date':'2024/09/03',},
+{'url':'/ait/articles/2409/03/news062.html','title':'主要なクラウド／インターネットサービス企業19社のデータセンター総容量の62％は、わずか20の州／都市に集約される、東京は何位？　Synergy Research Group','subtitle':'AWS、Microsoft、Google、Faceboook、Apple、Alibabaなど：','bigicon':'/ait/articles/2409/03/240_news062.jpg','icon':'/ait/articles/2409/03/top_news062.jpg','date':'2024/09/03',},
+<!-- CMS index end -->
+
+{}
+]};
+} else if(cat == 2){
+var json = {'data':[
+<!-- CMS index -->
+{'url':'/ait/articles/2409/04/news082.html','title':'Gartnerがハイプサイクルで「日常型AI」「デジタル従業員体験」が2026年までに主流になると予測','subtitle':'「デジタルワークプレースアプリケーションのハイプサイクル2024」：','bigicon':'/ait/articles/2409/04/240_news082.jpg','icon':'/ait/articles/2409/04/top_news082.jpg','date':'2024/09/04',},
+{'url':'/ait/articles/2409/06/news039.html','title':'［pandas超入門］探索的データ分析の基礎：タイタニックデータセットを調べてみよう','subtitle':'Pythonデータ処理入門：','bigicon':'/ait/articles/2409/06/240_news039.png','icon':'/ait/articles/2409/06/top_news039.png','date':'2024/09/06',},
+{'url':'/ait/articles/2409/04/news010.html','title':'ダイス係数（Dice coefficient）とは？','subtitle':'AI・機械学習の用語辞典：','bigicon':'/ait/articles/2409/04/240_news010.jpg','icon':'/ait/articles/2409/04/top_news010.jpg','date':'2024/09/04',},
+{'url':'/ait/articles/2409/03/news022.html','title':'［解決！Python］format関数や文字列のformatメソッド、f文字列で指定する書式指定子まとめ','subtitle':'解決！Python：','bigicon':'/ait/articles/2409/03/240_news022.png','icon':'/ait/articles/2409/03/top_news022.png','date':'2024/09/03',},
+{'url':'/ait/articles/2408/30/news067.html','title':'「専門業務向けLLM」の構築支援サービス　日立製作所が提供開始','subtitle':'生成AIへの投資負荷を軽減：','bigicon':'/ait/articles/2408/30/240_news067.jpg','icon':'/ait/articles/2408/30/top_news067.jpg','date':'2024/08/30',},
+{'url':'/ait/articles/2408/29/news003.html','title':'［データ分析］正規分布 〜 私より背の高い人はどれぐらいいるの？','subtitle':'やさしい確率分布：','bigicon':'/ait/articles/2408/29/240_news003.jpg','icon':'/ait/articles/2408/29/top_news003.jpg','date':'2024/08/29',},
+{'url':'/ait/articles/2408/27/news056.html','title':'せっかくAIを導入したのに使いこなせないのはなぜか　Clouderaが導入に関する調査結果を発表','subtitle':'「AI戦略の柱となる重要な要素が軽視されている」：','bigicon':'/ait/articles/2408/27/240_news056.jpg','icon':'/ait/articles/2408/27/top_news056.jpg','date':'2024/08/28',},
+{'url':'/ait/articles/2408/28/news025.html','title':'ジャッカード類似度（Jaccard Similarity）／ジャッカード係数（Jaccard Index）とは？','subtitle':'AI・機械学習の用語辞典：','bigicon':'/ait/articles/2408/28/240_news025.jpg','icon':'/ait/articles/2408/28/top_news025.jpg','date':'2024/08/28',},
+{'url':'/ait/articles/2408/27/news051.html','title':'生成AIが「過度な期待のピーク期」から「幻滅期」へ　Gartnerが先進技術のハイプ・サイクル2024年版を発表','subtitle':'自律型AIが台頭へ：','bigicon':'/ait/articles/2408/27/240_news051.png','icon':'/ait/articles/2408/27/top_news051.png','date':'2024/08/27',},
+{'url':'/ait/articles/2408/27/news070.html','title':'Google、Gemini 1.5 Flashの利用価格を大幅値下げ　AI Studio、Gemini APIの改善点とは','subtitle':'Gemini APIの対応言語が100以上に、PDFのマルチモーダル理解も：','bigicon':'/ait/articles/2408/27/240_news070.png','icon':'/ait/articles/2408/27/top_news070.png','date':'2024/08/27',},
+<!-- CMS index end -->
+
+{}
+]};
+} else if(cat == 3){
+var json = {'data':[
+<!-- CMS index -->
+{'url':'/ait/articles/2409/03/news002.html','title':'三菱電機が「生成AIに必要なものは生成AIに準備させる」奇策を採用　設計効率は何％向上するのか','subtitle':'AWS Summit Japan 2024セッションレポート：','bigicon':'/ait/articles/2409/03/240_news002.png','icon':'/ait/articles/2409/03/top_news002.png','date':'2024/09/03',},
+{'url':'/ait/articles/2409/06/news055.html','title':'Google、「Android Studio Koala Feature Drop（2024.1.2）」をリリース　開発に役立つ新機能を多数追加','subtitle':'Android 15に対応、Java 22機能のサポートなど：','bigicon':'/ait/articles/2409/06/240_news055.png','icon':'/ait/articles/2409/06/top_news055.png','date':'2024/09/06',},
+{'url':'/ait/articles/2409/05/news053.html','title':'新しい開発スタイルを切り開く、「GPTScript」とは何か','subtitle':'ここから始める「自然言語プログラミング」：','bigicon':'/ait/articles/2409/05/240_news053.jpg','icon':'/ait/articles/2409/05/top_news053.jpg','date':'2024/09/05',},
+{'url':'/ait/articles/2409/04/news063.html','title':'「Visual Studio 2022 v17.11」で「GitHub Copilot」のAI支援はどこまで便利になるのか？','subtitle':'AIで名前付けやデバッグなども効率化：','bigicon':'/ait/articles/2409/04/240_news063.png','icon':'/ait/articles/2409/04/top_news063.png','date':'2024/09/04',},
+{'url':'/ait/articles/2409/02/news055.html','title':'ソフトウェアを「作る人」と「使う人」の契約に盛り込むべき項目とは　経済産業省が資料公開','subtitle':'具体的な活用手順などを加えた「SBOM導入手引き」の改訂版：','bigicon':'/ait/articles/2409/02/240_news055.jpg','icon':'/ait/articles/2409/02/top_news055.jpg','date':'2024/09/02',},
+{'url':'/ait/articles/2409/02/news047.html','title':'「Windows Terminal Preview 1.22」公開　Sixel画像や書記素クラスタに対応','subtitle':'コマンドを保存して簡単に呼び出せるスニペットペインも利用可能に：','bigicon':'/ait/articles/2409/02/240_news047.png','icon':'/ait/articles/2409/02/top_news047.png','date':'2024/09/02',},
+{'url':'/ait/articles/2409/02/news039.html','title':'Wasmer JS SDK「@wasmer/sdk」アップデート　Node.jsやブラウザからWebアプリを簡単に作成可能に','subtitle':'Webアプリケーションのデプロイ、実行が手軽に：','bigicon':'/ait/articles/2409/02/240_news039.png','icon':'/ait/articles/2409/02/top_news039.png','date':'2024/09/02',},
+{'url':'/ait/articles/2408/30/news072.html','title':'HTTPメソッド「GET」と「POST」の違いとは？','subtitle':'HTTP 1.0とHTTP 1.1で微妙に異なる違い：','bigicon':'/ait/articles/2408/30/240_news072.jpg','icon':'/ait/articles/2408/30/top_news072.jpg','date':'2024/08/30',},
+{'url':'/ait/articles/2408/30/news062.html','title':'Microsoft、ベクトルデータベース「Pinecone」の活用を支援する「Pinecone .NET SDK」を発表','subtitle':'AIアプリケーション構築を支援：','bigicon':'/ait/articles/2408/30/240_news062.jpg','icon':'/ait/articles/2408/30/top_news062.jpg','date':'2024/08/30',},
+{'url':'/ait/articles/2408/29/news035.html','title':'CrowdStrike障害で学ぶべきは「テストの見直し」だけではない','subtitle':'「完全に自動化されたシステムであっても発生する可能性がある」：','bigicon':'/ait/articles/2408/29/240_news035.jpg','icon':'/ait/articles/2408/29/top_news035.jpg','date':'2024/08/29',},
+<!-- CMS index end -->
+
+{}
+]};
+} else if(cat == 4){
+var json = {'data':[
+<!-- CMS index -->
+{'url':'/ait/articles/2409/06/news056.html','title':'「ランサムウェアに一度感染したら、身代金を払ってもまた攻撃される」のはほぼ確実？　ウィズセキュア調査','subtitle':'中小企業は攻撃者にとって「狙いやすいターゲット」：','bigicon':'/ait/articles/2409/06/240_news056.jpg','icon':'/ait/articles/2409/06/top_news056.jpg','date':'2024/09/06',},
+{'url':'/ait/articles/2409/06/news069.html','title':'マイクロサービスアーキテクチャにおける「認証」　5つのベストプラクティスとは','subtitle':'認証部分を設計、開発する際に考慮すべきポイントとは：','bigicon':'/ait/articles/2409/06/240_news069.jpg','icon':'/ait/articles/2409/06/top_news069.jpg','date':'2024/09/06',},
+{'url':'/ait/articles/2408/29/news071.html','title':'半数が「改ざんを検知する仕組みがない」　日本HPがデバイスセキュリティに関する調査結果を発表','subtitle':'2割が「国家規模の脅威アクター」の影響を受けている：','bigicon':'/ait/articles/2408/29/240_news071.jpg','icon':'/ait/articles/2408/29/top_news071.jpg','date':'2024/08/29',},
+{'url':'/ait/articles/2408/28/news039.html','title':'NIST、3つのポスト量子暗号（PQC）標準（FIPS 203〜205）を発表　量子コンピュータ悪用に耐える暗号化アルゴリズム、どう決めた？','subtitle':'一般暗号化とデジタル署名の標準：','bigicon':'/ait/articles/2408/28/240_news039.jpg','icon':'/ait/articles/2408/28/top_news039.jpg','date':'2024/08/28',},
+{'url':'/ait/articles/2408/28/news049.html','title':'英国データ保護機関、セキュリティ対策不足を理由に罰金609万ポンドを要求　8万人分情報流出で被害多数','subtitle':'ランサムウェア攻撃で国民保健サービスが中断：','bigicon':'/ait/articles/2408/28/240_news049.jpg','icon':'/ait/articles/2408/28/top_news049.jpg','date':'2024/08/28',},
+{'url':'/ait/articles/2408/28/news040.html','title':'企業が過去12カ月間で最も直面したソフトウェアサプライチェーンの脅威とは　SlashData','subtitle':'脅威を低減するのに役立つ対策を解説：','bigicon':'/ait/articles/2408/28/240_news040.jpg','icon':'/ait/articles/2408/28/top_news040.jpg','date':'2024/08/28',},
+{'url':'/ait/articles/2408/26/news050.html','title':'Windowsにまつわる「あの問題」に付け込む攻撃を確認　チェック・ポイントがレポートを発表','subtitle':'攻撃者はマルウェア展開の機会を逃さない：','bigicon':'/ait/articles/2408/26/240_news050.jpg','icon':'/ait/articles/2408/26/top_news050.jpg','date':'2024/08/26',},
+{'url':'/ait/articles/2408/22/news014.html','title':'サイバー脅威の見積もり、できてるつもり？　辻氏、piyokango氏、根岸氏が3つのトピックで問い掛ける','subtitle':'ITmedia Security Week 2024 春：','bigicon':'/ait/articles/2408/22/240_news014.png','icon':'/ait/articles/2408/22/top_news014.png','date':'2024/08/22',},
+{'url':'/ait/articles/2408/21/news061.html','title':'「大きな被害は出ていないが注意が必要な通信」を確認　ラックがセキュリティレポートを公開','subtitle':'「ネットワーク内部の重要インシデントはマルウェアに起因するものが多い」：','bigicon':'/ait/articles/2408/21/240_news061.jpg','icon':'/ait/articles/2408/21/top_news061.jpg','date':'2024/08/21',},
+{'url':'/ait/articles/2408/20/news035.html','title':'ランサムウェア被害者が法執行機関に頼って平均約100万ドル漏えいコスト削減、身代金を回避した組織は何％？　IBM調査','subtitle':'漏えいに伴うコスト増で消費者は値上げに苦しむ：','bigicon':'/ait/articles/2408/20/240_news035.png','icon':'/ait/articles/2408/20/top_news035.png','date':'2024/08/20',},
+<!-- CMS index end -->
+
+{}
+]};
+} else if(cat == 5){
+var json = {'data':[
+<!-- CMS index -->
+{'url':'/ait/articles/2409/06/news011.html','title':'デジタル化の目的は効率化だけなのか？　大阪の製造業に起こった「うれしい想定外」','subtitle':'「俺らを殺す気か」から「面白いやん！」へ：','bigicon':'/ait/articles/2409/06/240_news011.jpg','icon':'/ait/articles/2409/06/top_news011.jpg','date':'2024/09/06',},
+{'url':'/ait/articles/2409/05/news056.html','title':'「非IT部門によるサービス導入」が肯定されるようになる？　「シャドーIT」との違いは？','subtitle':'ガートナー調査：','bigicon':'/ait/articles/2409/05/240_news056.jpg','icon':'/ait/articles/2409/05/top_news056.jpg','date':'2024/09/05',},
+{'url':'/ait/articles/2409/05/news001.html','title':'日本で仕事すると、打ち合わせばかりしている気がする','subtitle':'Go AbekawaのGo Global！〜ヴィンさんFromベトナム（後）：','bigicon':'/ait/articles/2409/05/240_news001.jpg','icon':'/ait/articles/2409/05/top_news001.jpg','date':'2024/09/05',},
+{'url':'/ait/articles/2409/04/news001.html','title':'私は「ナマケモノ」　レイジーになりたいので一生懸命勉強した','subtitle':'Go AbekawaのGo Global！〜ヴィンさんFromベトナム（前）：','bigicon':'/ait/articles/2409/04/240_news001.jpg','icon':'/ait/articles/2409/04/top_news001.jpg','date':'2024/09/04',},
+{'url':'/ait/articles/2409/03/news056.html','title':'もう「業務を通じてスキルアップ」は難しい？　レバテックがITエンジニアのキャリア調査の結果を発表','subtitle':'7割以上が「将来もITエンジニアを続けたい」と回答：','bigicon':'/ait/articles/2409/03/240_news056.jpg','icon':'/ait/articles/2409/03/top_news056.jpg','date':'2024/09/03',},
+{'url':'/ait/articles/2409/02/news005.html','title':'JR東海「スマートEX」の、スマートじゃないところ','subtitle':'期限は3日：','bigicon':'/ait/articles/2409/02/240_news005.jpg','icon':'/ait/articles/2409/02/top_news005.jpg','date':'2024/09/02',},
+{'url':'/ait/articles/2408/14/news004.html','title':'ずっとプログラマーになりたかった','subtitle':'Go AbekawaのGo Global！〜牛尾さんFrom日本（後）：','bigicon':'/ait/articles/2408/14/240_news004.jpg','icon':'/ait/articles/2408/14/top_news004.jpg','date':'2024/08/30',},
+{'url':'/ait/articles/2408/13/news005.html','title':'前例のないアジャイル事例を達成したらCOBOLプロジェクトを任された','subtitle':'Go AbekawaのGo Global！〜牛尾さんFrom日本（前）：','bigicon':'/ait/articles/2408/13/240_news005.jpg','icon':'/ait/articles/2408/13/top_news005.jpg','date':'2024/08/29',},
+{'url':'/ait/articles/2408/28/news056.html','title':'「俺、転職したら生成AIで仕事するんだ」　パーソルキャリアが転職活動に関する調査結果を発表','subtitle':'30％が「転職先は生成AIを使っているところがよい」と回答：','bigicon':'/ait/articles/2408/28/240_news056.jpg','icon':'/ait/articles/2408/28/top_news056.jpg','date':'2024/08/28',},
+{'url':'/ait/articles/2408/27/news003.html','title':'攻めのデータ分析に効果的な「DWH」の基本と導入時の注意点を学ぼう','subtitle':'ビジネスパーソンのためのIT用語基礎解説：','bigicon':'/ait/articles/2408/27/240_news003.gif','icon':'/ait/articles/2408/27/top_news003.gif','date':'2024/08/27',},
+<!-- CMS index end -->
+
+{}
+]};
+} else { return false }
+return json;
+};
+function setConfig(){
+
+	let setcount = 9;
+	const settime = 5000;
+	const setnewdate = 3;
+
+	setcount = (setcount == 9) ? Math.floor(Math.random()*5)+1 : setcount;
+	return [setcount,settime,setnewdate];
+}
+function newDateCheck(date){
+	let newmark = '';
+	const display = setConfig()[2];
+	const artdate = new Date(date);
+	const today = new Date();
+	const ndate =(today - artdate) / (1000 * 24 * 3600);
+	if(ndate <= display) newmark = '<span class="colBoxNewtxt">New!</span>';
+	return newmark;
+}
+</script>
+<meta content="summary" name="twitter:card"/>
+<meta content="@atmark_it" name="twitter:site"/>
+<meta content="@atmark_it" name="twitter:creator"/>
+<meta content="＠IT" property="og:site_name"/>
+<meta content="＠IT" property="og:title"/>
+<meta content="プロフェッショナルなIT技術者・管理者のためのコンテンツとコミュニティ満載の問題解決サイト。製品や技術に関する高度な解説記事や、掲示板、質問コーナーなど。" property="og:description"/>
+<meta content="https://atmarkit.itmedia.co.jp/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="https://image.itmedia.co.jp/images/logo/1200x630_500x500_ait.gif" property="og:image"/>
+<meta content="191458487533928" property="fb:pages">
+<meta content="1724827814406155" property="fb:app_id"/>
+<!--EDIT START-->
+<!--EDIT END-->
+<link href="https://www.itmedia.co.jp/css/base.css?202208301518" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.itmedia.co.jp/css/ait/base.css?202407011332" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.itmedia.co.jp/css/ait/top.css?202407011332" media="all" rel="stylesheet" type="text/css"/>
+<script src="//fc.itmedia.co.jp/fpcookie?site_id=itm_"></script>
+<!-- ITIKW -->
+<!-- masterType = not article -->
+<!-- Get user segments, normal use, with sync load of cx.js -->
+<script src="//cdn.cxense.com/cx.js"></script>
+<script src="//cdn.cxense.com/cx.cce.js"></script>
+<script>
+var cx_segments = cX.getUserSegmentIds({persistedQueryId:'32780b6d6fb51c7b1fefeb67a7e3305b165e5c6a'});
+</script>
+<script src="/js/base_v2.js?date=202402271050"></script>
+<script src="/js/top.js?date=201010281942"></script>
+<script src="/js/ait/base.js?date=202407011050"></script>
+<script src="/js/ait/top.js?date=201810261233"></script>
+<!-- GAM -->
+<!-- GAM設定 -->
+<!-- 自分研フラグ: -->
+<script src="/js/gamServerEnvironment.js?date=202107151140"></script>
+<script>
+window.googletag = window.googletag || {};
+window.googletag.cmd = window.googletag.cmd || [];
+</script>
+<script async="" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+// 共通処理
+window.gam_logop = {};
+window.gam_media= 'ait';
+// keyValue取得
+const gam_keyValue = function(){
+	const gam_server = gam_serverenvironment();
+	const gam_host = location.protocol + '\/\/' + location.host;
+	const gam_url = location.pathname.replace(/\/index.html$/,'\/');
+	const gam_key = getMETA('keywords').content;
+	const gam_adpath = getMETA('adpath').content;
+	if(cx_segments.length >= 200) cx_segments = cx_segments.slice(0,200);
+	const gam_composite = String((new Date().getTime() % 12)+1);
+	const gam_ug = typeof sc_visitor_id !== 'undefined' ? sc_visitor_id : '';
+	let gam_up = '';
+	if(gam_ug) gam_up = gam_ug.match(/^itm\_(a|m|y|K|W|8)/) ? 'A' : gam_ug.match(/^itm\_(b|n|z|L|X)/) ? 'B' : gam_ug.match(/^itm\_(c|o|A|M|Y)/) ? 'C' : gam_ug.match(/^itm\_(d|p|B|N|Z)/) ? 'D' : gam_ug.match(/^itm\_(e|q|C|O|0|9)/) ? 'E' : gam_ug.match(/^itm\_(f|r|D|P|1)/) ? 'F' : gam_ug.match(/^itm\_(g|s|E|Q|2)/) ? 'G' : gam_ug.match(/^itm\_(h|t|F|R|3)/) ? 'H' : gam_ug.match(/^itm\_(i|u|G|S|4)/) ? 'I' : gam_ug.match(/^itm\_(j|v|H|T|5)/) ? 'J' : gam_ug.match(/^itm\_(k|w|I|U|6)/) ? 'K' : gam_ug.match(/^itm\_(l|x|J|V|7)/) ? 'L' : '';
+	googletag.pubads().setTargeting('server',gam_server).setTargeting('host',gam_host).setTargeting('url',gam_url).setTargeting('CxSegments',cx_segments).setTargeting('composite',gam_composite);
+	if(gam_key) googletag.pubads().setTargeting('keywords',gam_key.replace(/(（|）|\(|\)|＃|＋)/g,'').split(','));
+	if(gam_adpath){
+		const itm_adpath = gam_adpath.split('/');
+		if(itm_adpath[3]) googletag.pubads().setTargeting('itm_adpath_4',itm_adpath[3]);
+		if(itm_adpath[4]) googletag.pubads().setTargeting('itm_adpath_5',itm_adpath[4]);
+	}
+	if(gam_ug) googletag.pubads().setTargeting('user_pattern',gam_up);
+}
+// 配信設定
+const gamDeliveryCheck = function(){
+	googletag.pubads().addEventListener('slotRenderEnded',function(e){
+		const gam_slotid = e.slot.getSlotElementId();
+		const gam_slotdiv = document.getElementById(gam_slotid);
+// 配信状況ログ
+		if(gam_logop) gam_logop[gam_slotid] = e;
+// 配信、未配信判別
+		const gam_delivery = e.isEmpty;
+// サイズ判別
+		const gam_wpsize = /(WallPaper)/.test(gam_slotid);
+// 1枠目入稿判別
+		const gam_firstset = /_1$/;
+		const gam_firstcheck = gam_firstset.test(gam_slotid);
+// AD表記ユニット
+		const gam_irpos = /(InRead$)/;
+		const gam_irposcheck = gam_irpos.test(gam_slotid);
+// 特殊広告対応
+		if(gam_wpsize||gam_firstcheck||gam_irposcheck){
+			let gam_noadflag = gam_delivery ? 'noad' : 'delivery';
+			const gam_adposition = gam_wpsize ? gam_slotdiv.closest('.WallPaperIn') : gam_slotdiv.parentNode;
+			const gam_adpch = gam_adposition.children[0];
+			const gam_adpchcheck = gam_adpch.classList.contains('adnotation');
+			const gam_hlcheck = gam_adpch.classList.contains('gam_headline');
+			let gam_hltext = gam_slotdiv.id == 'PC_LogoAD_1' ? 'スポンサーリンク' : 'Special';
+			gam_hltext += '<span class="gam_prmark">PR</span>';
+			if(gam_hlcheck && gam_noadflag == 'delivery' && gam_adpch.innerHTML == '') gam_adpch.innerHTML = gam_hltext;
+			gam_adposition.classList.add(gam_noadflag);
+			if(gam_wpsize && e.size){
+				if(e.size != '1,1'){
+					if(e.size[0] > 1) gam_adposition.style.width = e.size[0] + 'px';
+					if(e.size[1] > 1) gam_adposition.style.height = e.size[1] + 'px';
+					if(/(_left$)/.test(gam_slotid)) gam_adposition.style.left = '-' + (e.size[0] + 8) + 'px';
+					if(/(_right$)/.test(gam_slotid)) gam_adposition.style.right = '-' + (e.size[0] + 8) + 'px';
+					const mb = document.getElementById('masterBody');
+					if(mb) mb.classList.add('WpSet');
+				} else {
+					gam_adposition.style.display = 'none';
+				}
+			}
+			if(gam_irposcheck && !gam_delivery && !gam_adpchcheck){
+				const gam_adnotation = document.createElement('div');
+				gam_adnotation.innerHTML = 'advertisement';
+				gam_adnotation.classList.add('adnotation');
+				gam_adposition.insertBefore(gam_adnotation,gam_slotdiv);
+			}
+			if(gam_hlcheck && gam_noadflag == 'noad') gam_adpch.innerHTML = '';
+		}
+	});
+};
+// refresh
+const refreshGam = function(slot,dc){
+	googletag.cmd.push(function(){
+		let gframe = '';
+// 共通
+		if(slot == 'SuperBanner') gframe = [gam_spb];
+		if(slot == 'RcolRectangle') gframe = [gam_rct1];
+		if(slot == 'RcolFeatures') gframe = [gam_rf1,gam_rf2,gam_rf3];
+
+// top
+		if(slot == 'TopLink') gframe = [gam_tl1,gam_tl2,gam_tl3,gam_tl4,gam_tl5,gam_tl6,gam_tl7,gam_tl8,gam_tl9,gam_tl10,gam_tl11,gam_tl12,gam_tl13,gam_tl14,gam_tl15,gam_tl16,gam_tl17,gam_tl18,gam_tl19,gam_tl20,gam_tl21,gam_tl22,gam_tl23,gam_tl24,gam_tl25,gam_tl26,gam_tl27,gam_tl28,gam_tl29,gam_tl30];
+
+		if(gframe) googletag.pubads().refresh(gframe);
+// 配信状況取得
+		if(dc) gamDeliveryCheck();
+	});
+}
+
+// refresh引数
+// 共通
+var gam_sl1,gam_sl2,gam_sl3,gam_sl4,gam_sl5,gam_sl6,gam_sl7,gam_sl8,gam_sl9,gam_sl10,gam_sl11,gam_sl12,gam_sl13,gam_sl14,gam_sl15,gam_sl16,gam_sl17,gam_sl18,gam_sl19,gam_sl20,gam_spb,gam_rct1,gam_lt2,gam_rf1,gam_rf2,gam_rf3,gam_ft1,gam_ft2;
+
+// top
+var gam_tl1,gam_tl2,gam_tl3,gam_tl4,gam_tl5,gam_tl6,gam_tl7,gam_tl8,gam_tl9,gam_tl10,gam_tl11,gam_tl12,gam_tl13,gam_tl14,gam_tl15,gam_tl16,gam_tl17,gam_tl18,gam_tl19,gam_tl20,gam_tl21,gam_tl22,gam_tl23,gam_tl24,gam_tl25,gam_tl26,gam_tl27,gam_tl28,gam_tl29,gam_tl30;
+
+
+googletag.cmd.push(function(){
+	googletag.pubads().collapseEmptyDivs();
+// ユニット設定
+	const sd = '/43042345/ait/';
+	gam_rct1 = googletag.defineSlot(sd + 'PC_top_rcol-Rectangle',[[300,250],[300,300],[300,600]],'PC_rcol-Rectangle').addService(googletag.pubads());
+	gam_rf1 = googletag.defineSlot(sd + 'PC_rcol-Features',[[300,76]],'PC_rcol-Features_1').setTargeting('slot_pos','1').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_rf2 = googletag.defineSlot(sd + 'PC_rcol-Features',[[300,76]],'PC_rcol-Features_2').setTargeting('slot_pos','2').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_rf3 = googletag.defineSlot(sd + 'PC_rcol-Features',[[300,76]],'PC_rcol-Features_3').setTargeting('slot_pos','3').setTargeting('media',gam_media).addService(googletag.pubads());
+
+// top
+	gam_spb = googletag.defineSlot(sd + 'PC_top_SuperBanner',[[970,250]],'PC_SuperBanner').addService(googletag.pubads());
+	gam_tl1 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_1').setTargeting('slot_pos','1').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl2 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_2').setTargeting('slot_pos','2').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl3 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_3').setTargeting('slot_pos','3').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl4 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_4').setTargeting('slot_pos','4').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl5 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_5').setTargeting('slot_pos','5').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl6 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_6').setTargeting('slot_pos','6').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl7 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_7').setTargeting('slot_pos','7').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl8 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_8').setTargeting('slot_pos','8').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl9 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_9').setTargeting('slot_pos','9').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl10 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_10').setTargeting('slot_pos','10').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl11 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_11').setTargeting('slot_pos','11').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl12 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_12').setTargeting('slot_pos','12').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl13 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_13').setTargeting('slot_pos','13').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl14 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_14').setTargeting('slot_pos','14').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl15 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_15').setTargeting('slot_pos','15').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl16 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_16').setTargeting('slot_pos','16').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl17 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_17').setTargeting('slot_pos','17').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl18 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_18').setTargeting('slot_pos','18').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl19 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_19').setTargeting('slot_pos','19').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl20 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_20').setTargeting('slot_pos','20').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl21 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_21').setTargeting('slot_pos','21').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl22 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_22').setTargeting('slot_pos','22').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl23 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_23').setTargeting('slot_pos','23').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl24 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_24').setTargeting('slot_pos','24').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl25 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_25').setTargeting('slot_pos','25').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl26 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_26').setTargeting('slot_pos','26').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl27 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_27').setTargeting('slot_pos','27').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl28 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_28').setTargeting('slot_pos','28').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl29 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_29').setTargeting('slot_pos','29').setTargeting('media',gam_media).addService(googletag.pubads());
+	gam_tl30 = googletag.defineSlot(sd + 'PC_TopLink',[[637,70]],'PC_TopLink_30').setTargeting('slot_pos','30').setTargeting('media',gam_media).addService(googletag.pubads());
+
+	gam_keyValue(); // Key-Value設定
+	googletag.pubads().enableSingleRequest();
+	googletag.pubads().disableInitialLoad();
+	googletag.enableServices();
+});
+</script>
+<!-- /GAM -->
+<!--tr_cx_api-->
+<script src="//cx.api.itmedia.co.jp/v1.js"></script>
+<script src="//tr.api.itmedia.jp/v1.js"></script>
+<script src="//tr.api.itmedia.co.jp/cc/v1.js"></script>
+<!--/tr_cx_api-->
+<script src="/js/lib/cx_v2_cce.js?date=202408301220"></script>
+<script>
+var cX = cX || {}; cX.callQueue = cX.callQueue || [];
+var cx_k_param = cx_api_itm('ad');
+cX.callQueue.push(['setSiteId','1127153793923352357']);
+window.addEventListener('DOMContentLoaded',function(){
+	cx_push_iitt();
+	cX.callQueue.push(['setSiteId','1127153793923352357']);
+	cx_push_cxapi('7afa26d5cf882cbdf1133ef0a74bc60ab5581d17');
+	cx_click_map('1141827478709654509');
+	cX.callQueue.push(['sync','frk']);
+	cX.callQueue.push(['sync','aam']);
+	cx_add_meta();
+	cx_push_readable('7afa26d5cf882cbdf1133ef0a74bc60ab5581d17');
+},false);
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W3CLTQN');</script>
+<!-- End Google Tag Manager -->
+<!-- Cxense script end -->
+</meta></meta></head><body id="masterType-top">
+<!-- masterType = top : no use FB SDK -->
+<script type="text/javascript">
+var dcl_start = new Date();
+attachBodyClass();
+function masterChannel(){return 'ait';}
+function masterType(){return 'top';}
+function prFlag(){return '';}
+function spFlag(){return '';}
+</script>
+<!--ITWS-->
+<!--/ITWS-->
+<!--ITWL-->
+<!-- NOT ITWL -->
+<!--/ITWL-->
+<!-- サーチツール表示領域 -->
+<div class="outputFrame" id="outputFrame"></div>
+<div id="masterBody"><div id="masterBodyOut"><div id="masterBodyIn">
+<link href="//www.itmedia.co.jp/css/gnavi.css?date=202402271200" rel="stylesheet"/>
+<div data-theme="light" id="g_nav">
+<div id="g_nav_o">
+<!-- -->
+<div id="g_nav_i">
+<div class="g_nav_box">
+<div class="g_btn" data-menu="0" id="g_btn_menu">
+<div class="g_float g_float_left"></div>
+<div class="g_inbtn">
+<div class="g_lines">
+<div class="g_line"></div>
+<div class="g_line"></div>
+<div class="g_line"></div>
+<div class="g_line"></div>
+</div>
+<div class="g_txt">メディア</div>
+</div>
+</div>
+</div>
+<div class="g_nav_box"><h1 id="g_logo"><a href="https://atmarkit.itmedia.co.jp/"><img alt="＠IT" height="43" src="//image.itmedia.co.jp/images/logo/pcvheader_ait.png" width="90"/></a></h1></div>
+<div class="g_nav_box _flex"><div class="g_free_box">
+<div class="g_local g_local_btn gray_1">
+<div class="g_lnav_o"><a href="https://atmarkit.itmedia.co.jp/ait/series/search/"><div>連載一覧</div></a>
+</div>
+<div class="g_lnav_o"><a href="https://atmarkit.itmedia.co.jp/ait/series/1567/"><div>連載まとめ読み＠IT eBook</div></a>
+</div>
+<div class="g_lnav_o"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/features/ranking/index.html"><div>記事ランキング</div></a>
+</div>
+<div class="g_lnav_o"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/features/special/"><div>＠IT Special</div></a>
+</div>
+<div class="g_lnav_o"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/features/seminar/"><div>セミナー</div></a>
+</div>
+<div class="g_lnav_o"><a href="https://wp.techtarget.itmedia.co.jp/"><div>ホワイトペーパー</div></a>
+</div>
+</div><div class="g_local g_local_btn">
+<div class="g_lnav_o"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/cloud.html"><div>クラウド</div></a>
+</div>
+<div class="g_lnav_o"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/ai.html"><div>AI IoT</div></a>
+</div>
+<div class="g_lnav_o"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/devops.html"><div>アジャイル/DevOps</div></a>
+</div>
+<div class="g_lnav_o"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/security.html"><div>セキュリティ</div></a>
+</div>
+<div class="g_lnav_o"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/jibun/"><div>キャリア&amp;スキル</div></a>
+</div>
+<div class="g_lnav_o"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/win/"><div>Windows</div></a>
+</div>
+<div class="g_lnav_o"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/di/"><div>初・中級者向けAI</div></a>
+</div>
+<div class="g_lnav_o"><a href="javascript:void(0);"><div>その他</div></a>
+<div class="g_lnav_i"><ul>
+<li><a href="https://atmarkit.itmedia.co.jp/ait/subtop/server/"><div>Server &amp; Storage</div></a></li>
+<li><a href="https://atmarkit.itmedia.co.jp/ait/subtop/ux/"><div>HTML5 + UX</div></a></li>
+<li><a href="https://atmarkit.itmedia.co.jp/ait/subtop/smart/"><div>Smart &amp; Social</div></a></li>
+<li><a href="https://atmarkit.itmedia.co.jp/ait/subtop/coding/"><div>Coding Edge</div></a></li>
+<li><a href="https://atmarkit.itmedia.co.jp/ait/subtop/java/"><div>Java Agile</div></a></li>
+<li><a href="https://atmarkit.itmedia.co.jp/ait/subtop/db/"><div>Database Expert</div></a></li>
+<li><a href="https://atmarkit.itmedia.co.jp/ait/subtop/linux/"><div>Linux ＆ OSS</div></a></li>
+<li><a href="https://atmarkit.itmedia.co.jp/ait/subtop/network/"><div>Master of IP Network</div></a></li>
+<li><a href="https://atmarkit.itmedia.co.jp/ait/subtop/security/"><div>Security &amp; Trust</div></a></li>
+<li><a href="https://atmarkit.itmedia.co.jp/ait/subtop/systemdesign/"><div>System Design</div></a></li>
+<li><a href="https://atmarkit.itmedia.co.jp/ait/subtop/testtools/"><div>Test &amp; Tools</div></a></li>
+<li><a href="https://atmarkit.itmedia.co.jp/ait/subtop/dotnet/"><div>Insider.NET</div></a></li>
+<li><a href="https://el.jibun.atmarkit.co.jp/"><div>ブログ</div></a></li>
+</ul></div>
+</div>
+</div><div class="g_local g_local_txt">
+<div class="g_lnav_o"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/features/smart/ai4se.html"><div>AI for エンジニアリング</div></a>
+</div>
+<div class="g_lnav_o"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/lowcodenocode/index.html"><div>ローコード／ノーコード</div></a>
+</div>
+<div class="g_lnav_o"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/cloudnative/"><div>クラウドネイティブ</div></a>
+</div>
+<div class="g_lnav_o"><a href="https://atmarkit.itmedia.co.jp//ait/subtop/features/server/ms_win_2024.html"><div>Windows 11/365</div></a>
+</div>
+<div class="g_lnav_o"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/features/theme/index.html"><div>その他の特集</div></a>
+</div>
+</div></div></div>
+<div class="g_nav_box">
+<div class="g_btn" data-menu="0" id="g_btn_member">
+<div class="g_float g_float_right"></div>
+<a class="g_inbtn" href="javascript:void(0);">
+<div class="g_circles">
+<div class="g_circle"></div><div class="g_circle"></div><div class="g_circle"></div>
+</div>
+<div class="g_txt"></div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script async="" src="/js/gnavi.js?202407011330"></script>
+<div id="masterBodyOuter"><!-- --><div id="masterBodyInner">
+<div id="masterHeader">
+<div id="globalHeader">
+<div id="globalHeaderMiddle">
+<!-- ITN -->
+<!-- masterType = not 404 -->
+<!-- masterType = not 404 && not noad -->
+<div id="globalHeaderMiddle">
+<div id="SuperBanner">
+<div id="PC_SuperBanner"></div>
+<script>refreshGam('SuperBanner',true);</script>
+</div>
+</div>
+</div>
+<div id="globalHeaderBottom">
+</div>
+</div><!-- /#globalHeader -->
+</div>
+<div id="masterContents"><div id="globalContents">
+<div id="masterMain">
+<!-- -->
+<!-- TOPお詫び -->
+<div id="GTArea">
+<div class="colBox colBoxGTmenu" id="colBoxGTmenu">
+<ul>
+<li class="Active"><a href="javascript:void(0)" onclick="gtset(1)">クラウド</a></li>
+<li><a href="javascript:void(0)" onclick="gtset(2)">AI IoT</a></li>
+<li class="manuSmall"><a href="javascript:void(0)" onclick="gtset(3)">アジャイル/DevOps</a></li>
+<li><a href="javascript:void(0)" onclick="gtset(4)">セキュリティ</a></li>
+<li><a href="javascript:void(0)" onclick="gtset(5)">キャリア＆スキル</a></li>
+</ul>
+</div>
+<div class="colBox colBoxGT" id="colBoxGT"></div>
+</div>
+<script>
+var gtset = function(count){
+	gtset.articleset = function(data){
+		var html = '',lefthtml = '',righthtml = '';
+		for(var i=0;i<data.length;i++) {
+			if(i > 3) break;
+			var bigicon = data[i]['bigicon'];
+			var icon = data[i]['icon'];
+			var newmark = data[i]['date'] ? newDateCheck(data[i]['date']) : '';
+			if(i == 0){
+				lefthtml += '<div class="colBoxIndex GTLeft">\n';
+				lefthtml += '<div class="colBoxIcon GTLeftW"><a href="' + data[i]['url'] + '"><img src="' + imgSrv() + bigicon + '" onclick="cx_pp_event(\'aittop_gt_left_' + count + '\');" alt="' + data[i]['title'] + '" width="240" height="180"></a></div>\n';
+				lefthtml += '<div class="colBoxSubTitle"><p>' + data[i]['subtitle'] + '</p></div>\n';
+				lefthtml += '<div class="colBoxTitle"><h3><a href="' + data[i]['url'] + '" onclick="cx_pp_event(\'aittop_gt_left_' + count + '\');">' + data[i]['title'] + '</a>' + newmark + '</h3></div>\n';
+				lefthtml += '</div>\n';
+			} else {
+				righthtml += '<div class="colBoxIndex GTRight">\n';
+				righthtml += '<div class="colBoxIcon"><a href="' + data[i]['url'] + '" onclick="cx_pp_event(\'aittop_gt_right_' + count + '\');"><img src="' + imgSrv() + icon + '" alt="' + data[i]['title'] + '" width="120" height="90"></a></div>\n';
+				righthtml += '<div class="colBoxTitle"><h3><a href="' + data[i]['url'] + '" onclick="cx_pp_event(\'aittop_gt_right_' + count + '\');">' + data[i]['title'] + '</a>' + newmark + '</h3></div>\n';
+				righthtml += '</div>\n';
+			}
+		}
+		html += '<div class="GTLeftBox">\n' + lefthtml + '</div>\n';
+		html += '<div class="GTRightBox">\n' + righthtml + '</div>\n';
+		return html;
+	}
+	gtset.dataset = function(){
+		if(!count) count = 1;
+		let data = (count < 6) ? partsGtData(count)['data'] : partsGtData(1)['data'];
+		data.pop();
+		return data;
+	}
+	gtset.subtopurl = function(){
+		if(!count) count = 1;
+		const text = 'もっと読む';
+		let link = '';
+		if(count == 1) {link = '/ait/subtop/cloud.html';}
+		else if(count == 2) {link = '/ait/subtop/ai.html';}
+		else if(count == 3) {link = '/ait/subtop/devops.html';}
+		else if(count == 4) {link = '/ait/subtop/security.html';}
+		else if(count == 5) {link = '/ait/subtop/jibun/';}
+		else {link = '/ait/subtop/cloud.html';}
+		const subtopurl = '<a href="' + link + '" onclick="cx_pp_event(\'aittop_gt_linkmore_' + count + '\');">' + text + '</a>'
+		return subtopurl;
+	}
+	gtset.htmlset = function(){
+		const data = gtset.dataset();
+		if(!data) return false;
+		const subtopurl = gtset.subtopurl();
+		gtbox.style.opacity = 1;
+		for(var i=0;i<gmbox.children[0].children.length;i++) {
+			gmbox.children[0].children[i].classList.remove('Active');
+		}
+		gmbox.children[0].children[count-1].classList.add('Active');
+		let html = '';
+		html += '<div class="colBoxOuter">\n<div class="colBoxInner">\n' + gtset.articleset(data) + '\n</div>\n';
+		html += '<div class="GTLinkMore">' + subtopurl + '</div>\n</div>\n';
+		return html;
+	}
+	gtset.timerset = function(){
+		gtbox.style.opacity = 0;
+		(count == 5) ? count = 1 : count++;
+		setTimeout(function(){gtbox.innerHTML = gtset.htmlset();},300);
+	}
+	var gtbox = document.getElementById('colBoxGT');
+	var gmbox = document.getElementById('colBoxGTmenu');
+	var gtarea = document.getElementById('GTArea');
+	if(count == 0){
+		const config = setConfig();
+		count = config[0];
+		gtbox.innerHTML = gtset.htmlset();
+		var timeinterval = setInterval(function(){gtset.timerset();},config[1]);
+		gtarea.addEventListener('mouseenter',function(){clearInterval(timeinterval);}) ;
+		gtarea.addEventListener('mouseleave',function(){timeinterval = setInterval(function(){gtset.timerset();},config[1]);}) ;
+	} else {
+		clearInterval(timeinterval);
+		gtbox.innerHTML = gtset.htmlset();
+	}
+}
+gtset(0);
+</script>
+<div class="colBox colBoxCategoryArt colBoxNewsInsight" id="NewsInsight">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2><a href="https://atmarkit.itmedia.co.jp/ait/subtop/news/">新着ニュース</a></h2><span class="moreLink"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/news/">もっと読む</a></span></div>
+<div class="colBoxInner">
+<div class="colBoxIndex"><!-- CMS index -->
+<div class="colBoxIcon noIconSet"><a href="https://atmarkit.itmedia.co.jp/ait/articles/2409/07/news039.html"><img align="left" alt="icon" border="0" height="90" hspace="2" src="https://image.itmedia.co.jp/ait/articles/2409/07/top_news039.png" vspace="2" width="120"/></a></div>
+<div class="colBoxSubTitle"><h5>コーディングも支援：</h5></div>
+<div class="colBoxTitle"><h3><a href="https://atmarkit.itmedia.co.jp/ait/articles/2409/07/news039.html" title="xAI、X上でリアルタイムに情報処理できるLLM「Grok-2」「Grok-2 mini」β版をリリース　性能はGPT-4oに匹敵？">xAI、X上でリアルタイムに情報処理できるLLM「Grok-2」「Grok-2 mini」β版をリリース　性能はGPT-4oに匹敵？</a></h3></div>
+</div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxUlist titleList">
+<ul>
+<li><a href="https://atmarkit.itmedia.co.jp/ait/articles/2409/05/news056.html" title="「非IT部門によるサービス導入」が肯定されるようになる？　「シャドーIT」との違いは？">「非IT部門によるサービス導入」が肯定されるようになる？　「シャドーIT」との違いは？</a></li>
+<li><a href="https://atmarkit.itmedia.co.jp/ait/articles/2409/06/news056.html" title="「ランサムウェアに一度感染したら、身代金を払ってもまた攻撃される」のはほぼ確実？　ウィズセキュア調査">「ランサムウェアに一度感染したら、身代金を払ってもまた攻撃される」のはほぼ確実？　ウィズセキュア調査</a></li>
+<li><a href="https://atmarkit.itmedia.co.jp/ait/articles/2409/06/news069.html" title="マイクロサービスアーキテクチャにおける「認証」　5つのベストプラクティスとは">マイクロサービスアーキテクチャにおける「認証」　5つのベストプラクティスとは</a></li>
+<li><a href="https://atmarkit.itmedia.co.jp/ait/articles/2409/06/news055.html" title="Google、「Android Studio Koala Feature Drop（2024.1.2）」をリリース　開発に役立つ新機能を多数追加">Google、「Android Studio Koala Feature Drop（2024.1.2）」をリリース　開発に役立つ新機能を多数追加</a></li>
+<li><a href="https://atmarkit.itmedia.co.jp/ait/articles/2409/05/news067.html" title="「Kubernetes v1.31: Elli」公開　セキュリティ向上や運用の効率化につながる45の機能強化を発表">「Kubernetes v1.31: Elli」公開　セキュリティ向上や運用の効率化につながる45の機能強化を発表</a></li>
+<!-- CMS index end -->
+</ul>
+</div>
+<div class="colBoxClear"></div>
+</div>
+</div>
+</div><!-- NewsInsight -->
+<div class="colBox colBoxFeatures colBoxCategoryArt" id="colBoxFeatures">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2>Features</h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a "="" href="https://atmarkit.itmedia.co.jp/ait/articles/2408/26/news019.html"><img src="https://image.itmedia.co.jp/ait/images/htmlgen/top_features_image_1_1724399867.jpg"/></a></div>
+<div class="colBoxSubTitle"><h5>人気連載まとめ読み！ ＠IT eBook（121）：</h5></div>
+<div class="colBoxTitle"><h3><a href="https://atmarkit.itmedia.co.jp/ait/articles/2408/26/news019.html">超IT用語解説漫画「食べ超」を読んで、テクノロジーの進化に思いをはせよう</a></h3></div>
+<div class="colBoxDescription"><p>オッス！　オラ、マルコフ！　みんなの夏を楽しくするために、eBookになって帰ってきたよ！</p></div>
+<div class="colBoxIndexDate"><p><span class="indexDate">（2024/08/26）</span></p></div>
+<div class="colBoxClear"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- htmlgen -->
+<!-- Features -->
+<script>
+function topArticleListSet(data){
+	data.pop();
+	var html = '';
+	var listhtml = '';
+	for(var i=4;i<data.length;i++) {
+		var newmark = newDateCheck(data[i]['date']);
+		if(i<7) {
+			html += '<div class="colBoxIndex">\n';
+			if(data[i]['icon']) html += '<div class="colBoxIcon"><a href="' + data[i]['url'] + '"><img src="' + imgSrv() + data[i]['icon'] + '" alt="' + data[i]['title'] + '" width="120" height="90" loading="lazy"></a></div>\n';
+			if(data[i]['subtitle']) html += '<div class="colBoxSubTitle"><p>' + data[i]['subtitle'] + '</p></div>\n';
+			html += '<div class="colBoxTitle"><h3><a href="' + data[i]['url'] + '">' + data[i]['title'] + '</a>' + newmark + '</h3></div>\n';
+			 html += '<div class="colBoxIndexDate"><p><span class="indexDate">（' + data[i]['date'] + '）</span></p></div>\n';
+			html += '</div>\n';
+		} else {
+			listhtml += '<li>\n';
+			listhtml += '<div class="colBoxSubTitle"><p>' + data[i]['subtitle'] + '</p></div>\n';
+			listhtml += '<div class="colBoxTitle"><h3><a href="' + data[i]['url'] + '">' + data[i]['title'] + '</a>' + newmark + '</h3><span class="indexDate">（' + data[i]['date'] + '）</span></div>\n';
+			listhtml += '</li>\n';
+		}
+	}
+	html += '<div class="colBoxIndex">\n<div class="colBoxUlist titleList">\n<ul>\n';
+	html += listhtml;
+	html += '</ul>\n</div>\n</div>\n';
+	return html;
+}
+</script>
+<!-- クラウド -->
+<div class="colBox colBoxCategoryArt colBoxCloud" id="colBoxCloud">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2><a href="https://atmarkit.itmedia.co.jp/ait/subtop/cloud.html">クラウド</a></h2><span class="moreLink"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/cloud.html">もっと読む</a></span></div>
+<div class="colBoxInner" id="Cloud"></div>
+</div>
+</div>
+<script>
+(function(){
+	var articlebox = document.getElementById('Cloud');
+	if(!articlebox) return false;
+	var data = partsGtData(1)['data'];
+	if(!data) return false;
+	articlebox.innerHTML = topArticleListSet(data);
+})();
+</script>
+<!-- /クラウド -->
+<!-- AI IoT -->
+<div class="colBox colBoxCategoryArt colBoxAiiot" id="colBoxAiiot">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2><a href="https://atmarkit.itmedia.co.jp/ait/subtop/ai.html">AI IoT</a></h2><span class="moreLink"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/ai.html">もっと読む</a></span></div>
+<div class="colBoxInner" id="AIIoT"></div>
+</div>
+</div>
+<script>
+(function(){
+	var articlebox = document.getElementById('AIIoT');
+	if(!articlebox) return false;
+	var data = partsGtData(2)['data'];
+	if(!data) return false;
+	articlebox.innerHTML = topArticleListSet(data);
+})();
+</script>
+<!-- /AI IoT -->
+<!-- DevOps -->
+<div class="colBox colBoxCategoryArt colBoxDevops" id="colBoxDevops">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2><a href="https://atmarkit.itmedia.co.jp/ait/subtop/devops.html">アジャイル/DevOps</a></h2><span class="moreLink"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/devops.html">もっと読む</a></span></div>
+<div class="colBoxInner" id="DevOps"></div>
+</div>
+</div>
+<script>
+(function(){
+	var articlebox = document.getElementById('DevOps');
+	if(!articlebox) return false;
+	var data = partsGtData(3)['data'];
+	if(!data) return false;
+	articlebox.innerHTML = topArticleListSet(data);
+})();
+</script>
+<!-- /DevOps -->
+<!-- セキュリティ -->
+<div class="colBox colBoxCategoryArt colBoxSecurity" id="colBoxSecurity">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2><a href="https://atmarkit.itmedia.co.jp/ait/subtop/security.html">セキュリティ</a></h2><span class="moreLink"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/security.html">もっと読む</a></span></div>
+<div class="colBoxInner" id="Security"></div>
+</div>
+</div>
+<script>
+(function(){
+	var articlebox = document.getElementById('Security');
+	if(!articlebox) return false;
+	var data = partsGtData(4)['data'];
+	if(!data) return false;
+	articlebox.innerHTML = topArticleListSet(data);
+})();
+</script>
+<!-- /セキュリティ -->
+<!-- キャリア&スキル  -->
+<div class="colBox colBoxCategoryArt colBoxJibun" id="colBoxJibun">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2><a href="https://atmarkit.itmedia.co.jp/ait/subtop/jibun/">キャリア&amp;スキル</a></h2><span class="moreLink"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/jibun/">もっと読む</a></span></div>
+<div class="colBoxInner" id="Jibun"></div>
+</div>
+</div>
+<script>
+(function(){
+	var articlebox = document.getElementById('Jibun');
+	if(!articlebox) return false;
+	var data = partsGtData(5)['data'];
+	if(!data) return false;
+	articlebox.innerHTML = topArticleListSet(data);
+})();
+</script>
+<!-- /キャリア&スキル -->
+<div class="colbox colBoxPageLinkMore" id="colBoxPageLinkMore"><a href="https://atmarkit.itmedia.co.jp/ait/subtop/archive/">さらに過去の記事を読む</a></div>
+<div id="TopLink">
+<div class="gam_headline">Special<span class="gam_prmark">PR</span></div>
+<div id="PC_TopLink_1" style="min-width:637px;min-height:70px;"></div>
+<div id="PC_TopLink_2" style="min-height:70px;"></div>
+<div id="PC_TopLink_3" style="min-height:70px;"></div>
+<div id="PC_TopLink_4" style="min-height:70px;"></div>
+<div id="PC_TopLink_5" style="min-height:70px;"></div>
+<div id="PC_TopLink_6" style="min-height:70px;"></div>
+<div id="PC_TopLink_7" style="min-height:70px;"></div>
+<div id="PC_TopLink_8" style="min-height:70px;"></div>
+<div id="PC_TopLink_9" style="min-height:70px;"></div>
+<div id="PC_TopLink_10" style="min-height:70px;"></div>
+<div id="PC_TopLink_11"></div>
+<div id="PC_TopLink_12"></div>
+<div id="PC_TopLink_13"></div>
+<div id="PC_TopLink_14"></div>
+<div id="PC_TopLink_15"></div>
+<div id="PC_TopLink_16"></div>
+<div id="PC_TopLink_17"></div>
+<div id="PC_TopLink_18"></div>
+<div id="PC_TopLink_19"></div>
+<div id="PC_TopLink_20"></div>
+<div id="PC_TopLink_21"></div>
+<div id="PC_TopLink_22"></div>
+<div id="PC_TopLink_23"></div>
+<div id="PC_TopLink_24"></div>
+<div id="PC_TopLink_25"></div>
+<div id="PC_TopLink_26"></div>
+<div id="PC_TopLink_27"></div>
+<div id="PC_TopLink_28"></div>
+<div id="PC_TopLink_29"></div>
+<div id="PC_TopLink_30"></div>
+<script>refreshGam('TopLink');</script>
+</div>
+<div class="colBox colBoxCategoryArt colBoxEL" id="colBoxEL">
+<div class="colBoxOuter">
+<!-- EL -->
+<div class="colBoxInner colBoxInnerEL">
+<div class="colBoxInnerHead"><h2><a href="http://el.jibun.atmarkit.co.jp/">エンジニアライフ</a></h2><span class="moreLink"><a href="http://el.jibun.atmarkit.co.jp/">一覧</a></span></div>
+<div class="colBoxIndex" id="js-topELIndex">
+<div class="colBoxIcon"><a href="https://el.jibun.atmarkit.co.jp/kaeruse/2024/09/content_12.html?ref=rss"><img alt="かえるSE 第214回「上司の姿勢」" height="100" loading="lazy" src="https://el.jibun.atmarkit.co.jp//mt-static/support/assets_c/userpics/userpic-292-100x100.png" width="100"/></a></div>
+<div class="colBoxTitle"><h3><a href="https://el.jibun.atmarkit.co.jp/kaeruse/2024/09/content_12.html?ref=rss" title="かえるSE 第214回「上司の姿勢」">かえるSE 第214回「上司の姿勢」</a></h3></div>
+<div class="colBoxUlist"><ul>
+<li><a href="https://el.jibun.atmarkit.co.jp/you1tech/2024/09/it-projects-importance-of-initiative-and-design-accuracy.html?ref=rss">「設計書通り、言われた通り、でもそれだけじゃダメ！」という矛盾を超えて</a></li><li><a href="https://el.jibun.atmarkit.co.jp/pythonlove/2024/09/380python1.html?ref=rss">380.Pythonのマルとバツ(1)</a></li><li><a href="https://el.jibun.atmarkit.co.jp/shibatatsu/2024/09/post_4.html?ref=rss">業界の知を集結！　ベトナムオフショア開発協会を立ち上げました。</a></li><li><a href="https://el.jibun.atmarkit.co.jp/career/2024/09/642.html?ref=rss">第642回　老害について考える</a></li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="masterSub">
+<!-- サーチツール（PC）ここから -->
+<script src="/js/lib/cx_search.js"></script>
+<link href="https://www.itmedia.co.jp/css/lib/cx_search_pc.css" rel="stylesheet"/>
+<div id="new_globalHeaderSearch">
+<form class="cx" name="serchForm">
+<div class="searchBar">
+<input class="searchQuery" id="searchQuery" name="q" placeholder="検索" type="text"/>
+<div class="dataSelect">
+<div class="serch_circle"></div>
+<div class="serch_bar"></div>
+<button class="clac" onclick="getSearchText('1','pcv','1127153793923352357'); return false;">検索</button>
+</div>
+</div>
+</form>
+</div>
+<!-- サーチツール（PC）ここまで -->
+<div id="RcolRectangle">
+<div id="PC_rcol-Rectangle" style="min-width:300px;min-height:250px;"></div>
+<script>refreshGam('RcolRectangle');</script>
+</div><!-- レクタングル -->
+<!-- 編集部からのおしらせ -->
+<div class="colBox colBoxAitEbook" id="colBoxAitEbook">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2>＠IT eBook</h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="https://atmarkit.itmedia.co.jp/ait/articles/2408/26/news019.html#utm_medium=rightcol_ebook&amp;utm_content=imglink1"><img alt="超IT用語解説漫画「食べ超」を読んで、テクノロジーの進化に思いをはせよう" height="60" src="https://image.itmedia.co.jp/ait/images/htmlgen/parts_top_rightAitEbook1__1_1724401225.jpg" width="80"/></a></div>
+<div class="colBoxTitle"><h3><a href="https://atmarkit.itmedia.co.jp/ait/articles/2408/26/news019.html#utm_medium=rightcol_ebook&amp;utm_content=textlink1">超IT用語解説漫画「食べ超」を読んで、テクノロジーの進化に思いをはせよう</a></h3></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="https://atmarkit.itmedia.co.jp/ait/articles/2407/24/news043.html#utm_medium=rightcol_ebook&amp;utm_content=imglink2"><img alt="先進企業はOSSにどう取り組んでいる？　OSPOとSBOMのリアルが学べる無料の電子書籍" height="60" src="https://image.itmedia.co.jp/ait/images/htmlgen/parts_top_rightAitEbook1__1_1721826826.jpg" width="80"/></a></div>
+<div class="colBoxTitle"><h3><a href="https://atmarkit.itmedia.co.jp/ait/articles/2407/24/news043.html#utm_medium=rightcol_ebook&amp;utm_content=textlink2">先進企業はOSSにどう取り組んでいる？　OSPOとSBOMのリアルが学べる無料の電子書籍</a></h3></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="https://atmarkit.itmedia.co.jp/ait/articles/2406/27/news010.html#utm_medium=rightcol_ebook&amp;utm_content=imglink3"><img alt="今すぐ役立つ！　ディスク管理を効率化するPowerShellコマンドレット集" height="60" src="https://image.itmedia.co.jp/ait/images/htmlgen/parts_top_rightAitEbook1__1_1719394551.jpg" width="80"/></a></div>
+<div class="colBoxTitle"><h3><a href="https://atmarkit.itmedia.co.jp/ait/articles/2406/27/news010.html#utm_medium=rightcol_ebook&amp;utm_content=textlink3">今すぐ役立つ！　ディスク管理を効率化するPowerShellコマンドレット集</a></h3></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="https://atmarkit.itmedia.co.jp/ait/articles/2405/30/news037.html#utm_medium=rightcol_ebook&amp;utm_content=imglink4"><img alt="Python、Node.js、C#のサンプルコード付き　サービス間通信技術「gRPC」を学べる無料の電子書籍" height="60" src="https://image.itmedia.co.jp/ait/images/htmlgen/parts_top_rightAitEbook1__1_1716989854.png" width="80"/></a></div>
+<div class="colBoxTitle"><h3><a href="https://atmarkit.itmedia.co.jp/ait/articles/2405/30/news037.html#utm_medium=rightcol_ebook&amp;utm_content=textlink4">Python、Node.js、C#のサンプルコード付き　サービス間通信技術「gRPC」を学べる無料の電子書籍</a></h3></div>
+<div class="colBoxClear"></div>
+</div>
+</div>
+<div class="colBoxPageLink">» <a href="https://atmarkit.itmedia.co.jp/ait/series/1567/#utm_medium=rightcol_ebook&amp;utm_content=toindex">一覧ページへ</a></div>
+</div>
+</div>
+<!-- ＠IT eBook -->
+<div class="colBox colBoxArticleRanking active1" id="colBoxArticleRanking"></div><!-- フォーラムランキング -->
+<script>setForumRankingMonthAndDay();</script>
+<div class="colBox colBoxteemasitebanner" id="colBoxteemasitebanner">
+<div class="colBoxOuter">
+<div class="colBoxHead"><p>注目のテーマ</p></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxBanner">
+<a href="https://atmarkit.itmedia.co.jp/ait/subtop/features/smart/ai4se.html"><img alt="AI for エンジニアリング" src="https://image.itmedia.co.jp/ait/images/htmlgen/rc_teemasitebanner_1_1687348083.png"/></a>
+</div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxBanner">
+<a href="https://atmarkit.itmedia.co.jp/ait/subtop/features/security/supplychainissues.html"><img alt="「サプライチェーン攻撃」対策" src="https://image.itmedia.co.jp/ait/images/htmlgen/rc_teemasitebanner_1_1671517745.png"/></a>
+</div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxBanner">
+<a href="https://atmarkit.itmedia.co.jp/ait/subtop/features/security/vulnerability.html"><img alt="1P情シスのための脆弱性管理／対策の現実解" src="https://image.itmedia.co.jp/ait/images/htmlgen/rc_teemasitebanner_1_1661478210.png"/></a>
+</div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxBanner">
+<a href="https://atmarkit.itmedia.co.jp/ait/subtop/features/cloud/oss_supplychain.html"><img alt="OSSのサプライチェーン管理、取るべきアクションとは" src="https://image.itmedia.co.jp/ait/images/htmlgen/rc_teemasitebanner_1_1656923912.png"/></a>
+</div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxBanner">
+<a href="https://atmarkit.itmedia.co.jp//ait/subtop/features/server/ms_win_2024.html"><img alt="Microsoft ＆ Windows最前線2024" src="https://image.itmedia.co.jp/ait/images/htmlgen/rc_teemasitebanner_5_1706753441.jpg"/></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+(function(){
+	const tm = document.querySelector('#colBoxteemasitebanner .colBoxIndex');
+	if(!tm){
+		const tmt = document.getElementById('colBoxteemasitebanner');
+		tmt.innerHTML = '';
+		tmt.style.display = 'none';
+	}
+})();
+</script>
+<!-- 注目のテーマ -->
+<div class="colBox colBoxTtFeaturedcontent" id="colBoxTtFeaturedcontent">
+<div class="colBoxOuter"><div class="colBoxHead"><h2>TechTargetジャパンの注目コンテンツ</h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxUlist"><ul>
+<li><a href="https://techtarget.itmedia.co.jp/tt/news/2407/30/news08.html#utm_medium=content-text&amp;utm_source=tt-ait-featured&amp;utm_campaign=20240731&amp;utm_content=AL1" title="Windowsブルースクリーン問題を招いた「CrowdStrikeじゃない方の原因」はこれだ">Windowsブルースクリーン問題を招いた「CrowdStrikeじゃない方の原因」はこれだ</a></li>
+<li><a href="https://techtarget.itmedia.co.jp/tt/news/2407/18/news02.html#utm_medium=content-text&amp;utm_source=tt-ait-featured&amp;utm_campaign=20240731&amp;utm_content=AL1" title="「オンプレミス回帰」が“もはや常識”になる、これだけの理由">「オンプレミス回帰」が“もはや常識”になる、これだけの理由</a></li>
+<li><a href="https://techtarget.itmedia.co.jp/tt/news/2406/20/news06.html#utm_medium=content-text&amp;utm_source=tt-ait-featured&amp;utm_campaign=20240731&amp;utm_content=AL1" title="Windows 11「リモートデスクトップが黒い画面のまま動かない」の原因は？">Windows 11「リモートデスクトップが黒い画面のまま動かない」の原因は？</a></li>
+<li><a href="https://techtarget.itmedia.co.jp/tt/news/2407/17/news05.html#utm_medium=content-text&amp;utm_source=tt-ait-featured&amp;utm_campaign=20240731&amp;utm_content=AL1" title="「Javaの学習」を始める“お薦めの方法”はこれだ">「Javaの学習」を始める“お薦めの方法”はこれだ</a></li>
+<li><a href="https://techtarget.itmedia.co.jp/tt/news/2406/21/news07.html#utm_medium=content-text&amp;utm_source=tt-ait-featured&amp;utm_campaign=20240731&amp;utm_content=AL1" title="“年収1500万円”が夢じゃなくなる「資格」はこれだ">“年収1500万円”が夢じゃなくなる「資格」はこれだ</a></li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+<!-- TechTargetジャパンの注目コンテンツ -->
+<div class="colBox colBoxSeminarFeaturesLink" id="colBoxSeminarFeaturesLink">
+<div class="colBoxOuter"><div class="colBoxHead"><h2>＠ITイベント＆セミナー &lt;受付中！&gt;</h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxUlist"><ul>
+<li><a href="https://members08.live.itmedia.co.jp/library/NzMyODU%253D?group=Ope2024s&amp;np_source=itm_atit_ev&amp;utm_source=itm_atit_ev&amp;utm_medium=content-text" title="2024/9/3（火）〜9/4（水）＠IT 運用管理セミナー 2024 夏 未来を切り開くための運用管理 運用管理者に求められるスキルセットを徹底解剖">＠IT 運用管理セミナー 2024 夏 未来を切り開くための運用管理 運用管理者に求められるスキルセットを徹底解剖 [2024/9/3（火）〜9/4（水）]</a></li>
+<li><a href="https://members07.live.itmedia.co.jp/library/NzM2MDA%253D?group=SEIHIN240910&amp;np_source=itm_atit_ev&amp;utm_source=itm_atit_ev&amp;utm_medium=content-text" title="2024/9/10（火）データとシステムの「バラバラ」を解消！業務改革の切り札iPaaSの選び方">データとシステムの「バラバラ」を解消！業務改革の切り札iPaaSの選び方 [2024/9/10（火）]</a></li>
+<li><a href="https://members07.live.itmedia.co.jp/library/NzM0NDY%253D?group=JOSYS&amp;np_source=itm_atit_ev&amp;utm_source=itm_atit_ev&amp;utm_medium=content-text" title="2024/9/10（火）〜9/11（水）変わる情シス〜企業の成長基盤となる「IT推進者」の業務改革〜">変わる情シス〜企業の成長基盤となる「IT推進者」の業務改革〜 [2024/9/10（火）〜9/11（水）]</a></li>
+<li><a href="https://members06.live.itmedia.co.jp/library/NzM4NzE%253D?group=CNW2024sSP&amp;np_source=itm_atit_ev&amp;utm_source=itm_atit_ev&amp;utm_medium=content-text" title="2024/9/11（水）〜9/13（金）＠IT Cloud Native Week 2024夏 特別編集版 企業のクラウドネイティブ実践事例 〜先行企業に学ぶ、クラウドネイティブへの本音と勘所〜">＠IT Cloud Native Week 2024夏 特別編集版 企業のクラウドネイティブ実践事例 〜先行企業に学ぶ、クラウドネイティブへの本音と勘所〜 [2024/9/11（水）〜9/13（金）]</a></li>
+<li><a href="https://members10.live.itmedia.co.jp/library/NzM1OTY%253D?group=CHUSHO2024S&amp;np_source=itm_atit_ev&amp;utm_source=itm_atit_ev&amp;utm_medium=content-text" title="2024/9/17（火）中小企業のためのデジタル戦略〜「人なし、経験なし、時間なし」でも取り組める業務と組織の変革〜">中小企業のためのデジタル戦略〜「人なし、経験なし、時間なし」でも取り組める業務と組織の変革〜 [2024/9/17（火）]</a></li>
+<li><a href="https://members05.live.itmedia.co.jp/library/NzQzODU%253D?group=ITOT&amp;np_source=itm_atit_ev&amp;utm_source=itm_atit_ev&amp;utm_medium=content-text" title="2024/9/18（水）IT部門がいま知るべき製造現場のOTセキュリティ">IT部門がいま知るべき製造現場のOTセキュリティ [2024/9/18（水）]</a></li>
+<li><a href="https://members10.live.itmedia.co.jp/library/NzUxNjc%253D?group=TechHighlights2024Summer&amp;np_source=itm_atit_ev&amp;utm_source=itm_atit_ev&amp;utm_medium=content-text" title="2024/9/24（火）〜9/25（水）ITmedia Tech Highlights 2024 Summer 〜セキュリティ／データ基盤・活用／開発編〜">ITmedia Tech Highlights 2024 Summer 〜セキュリティ／データ基盤・活用／開発編〜 [2024/9/24（火）〜9/25（水）]</a></li>
+<li><a href="https://members08.live.itmedia.co.jp/library/NzQ3MDM%253D?group=KeiriDX240925&amp;np_source=itm_atit_ev&amp;utm_source=itm_atit_ev&amp;utm_medium=content-text" title="2024/9/25（水）経理業務のムリ・ムダ・ムラを徹底解消！「経理DXツールの選び方」">経理業務のムリ・ムダ・ムラを徹底解消！「経理DXツールの選び方」 [2024/9/25（水）]</a></li>
+<li><a href="https://members16.live.itmedia.co.jp/library/NzEwODg%3D?group=VE2024S&amp;np_source=itm_atit_ev&amp;utm_source=itm_atit_ev&amp;utm_medium=content-text" title="2024/8/27（火）〜9/27（金）ITmedia Virtual EXPO 2024 夏">ITmedia Virtual EXPO 2024 夏 [2024/8/27（火）〜9/27（金）]</a></li>
+</ul></div>
+</div>
+</div><div class="colBoxPageLink">» <a href="https://atmarkit.itmedia.co.jp/ait/subtop/features/seminar/index.html">一覧ページへ</a></div>
+</div>
+</div>
+<!-- ＠IT セミナー＆勉強会 -->
+<div id="RcolFeatures">
+<div class="gam_headline">あなたにおすすめの記事<span class="gam_prmark">PR</span></div>
+<div id="PC_rcol-Features_1" style="min-width:300px;min-height:76px;"></div>
+<div id="PC_rcol-Features_2" style="min-width:300px;min-height:76px;"></div>
+<div id="PC_rcol-Features_3" style="min-width:300px;min-height:76px;"></div>
+<script>refreshGam('RcolFeatures');</script>
+</div><!-- タイアップブースト -->
+</div>
+<div class="colBoxClear"></div>
+</div></div>
+<div id="mediaFooter">
+<div id="mediaFooterBgArea"></div>
+<div class="mediaFooterMediaList">
+<div class="colBoxIndex colBoxAit">
+<div class="colBoxTitle"><p>@ITについて</p></div>
+<div class="colBoxUlist">
+<ul>
+<li><a href="https://atmarkit.itmedia.co.jp/aboutus/contact_us/contact_us.html" title="お問い合わせ">お問い合わせ</a></li>
+<li><a href="https://go.itmedia.co.jp/l/291242/2022-08-17/2b9nm9r" title="広告について">広告について</a></li>
+<li><a href="https://go.itmedia.co.jp/l/291242/2022-09-11/2bjg5ck" title="採用広告について">採用広告について</a></li>
+<li><a href="https://atmarkit.itmedia.co.jp/ait/subtop/termofuse.html" title="利用規約">利用規約</a></li>
+<li><a href="https://atmarkit.itmedia.co.jp/ait/subtop/copyright.html" title="著作権・リンク・免責事項">著作権・リンク・免責事項</a></li>
+<li><a href="https://atmarkit.itmedia.co.jp/info/sitemap/sitemap.html" title="サイトマップ">サイトマップ</a></li>
+</ul>
+</div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex colBoxRSS">
+<div class="colBoxTitle"><p>RSSについて</p></div>
+<div class="colBoxUlist">
+<ul>
+<li><a href="https://corp.itmedia.co.jp/media/rss_list/" title="＠ITのRSS一覧">＠ITのRSS一覧</a></li>
+</ul>
+</div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex colBoxID">
+<div class="colBoxTitle"><p>アイティメディアIDについて</p></div>
+<div class="colBoxUlist">
+<ul>
+<li><a href="https://id.itmedia.co.jp/info/campaign/all_id.html" title="アイティメディアIDとは">アイティメディアIDとは</a></li>
+</ul>
+</div>
+<div class="colBoxClear"></div>
+</div>
+<!-- メディアフッター -->
+<div class="colBoxIndex colBoxMailmagazine">
+<div class="colBoxTitle"><p>メールマガジン登録</p></div>
+<div class="colBoxDescription"><p>
+＠ITのメールマガジンは、 もちろん、すべて無料です。ぜひメールマガジンをご購読ください。
+</p>
+<div id="registerButton">
+<a href="//atmarkit.itmedia.co.jp/ait/subtop/info/lp/ait_new.html">申し込みページへ</a>
+</div>
+</div>
+</div>
+<div class="colBoxClear"></div>
+</div>
+</div>
+<div id="masterFooter">
+<div id="globalFooter">
+<div id="footerBgArea"></div>
+<!-- GLOBALFOOTER -->
+<div id="globalFooterCorp" style="border:none;">
+<div id="globalFooterCorpIn">
+<p id="globalFooterCorpLogo"><a href="https://corp.itmedia.co.jp/"><img alt="アイティメディア株式会社" height="28" src="https://image.itmedia.co.jp/images/logo/170_itmedia_bgw.gif" width="170"/></a>ITmediaはアイティメディア株式会社の登録商標です。</p>
+<p id="globalFooterCorpLink"><a href="https://corp.itmedia.co.jp/media/">メディア一覧</a> | <a href="https://corp.itmedia.co.jp/media/sns/">公式SNS</a> | <a href="https://corp.itmedia.co.jp/ad/">広告案内</a> | <a href="https://corp.itmedia.co.jp/corp/inquiry/">お問い合わせ</a> | <a href="https://corp.itmedia.co.jp/corp/privacy/">プライバシーポリシー</a> | <a href="https://corp.itmedia.co.jp/media/rss_list/">RSS</a> | <a href="https://corp.itmedia.co.jp/">運営会社</a> | <a href="https://corp.itmedia.co.jp/recruit/">採用情報</a> | <a href="https://www.itmedia.co.jp/info/rule/recommended.html">推奨環境</a></p>
+</div>
+</div>
+<!-- /#globalFooterCorp -->
+</div>
+</div>
+</div><!--/masterBodyInner-->
+</div><!--/masterBodyOuter-->
+</div><!--/masterBodyIn-->
+</div><!--/masterBodyOut-->
+</div><!--/masterBody-->
+<script defer="" src="/js/masterBodyEnd.js?202406121110"></script><!-- window.onload -->
+<script src="/js/itmid/smartPhoneHeadLink.js"></script><!-- Smart Phone Large Button-->
+<!--BEACON-->
+<div id="BEACON"><div id="N">
+<!-- SiteCatalyst code version: H.2.
+Copyright 1997-2005 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript" src="/include/sc/s_code.js?20170501"></script>
+<script language="JavaScript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+function $() {
+  var elements = new Array();
+  for (var i = 0; i < arguments.length; i++) {
+    var element = arguments[i];
+    if (typeof element == 'string')
+      element = document.getElementById(element);
+    if (arguments.length == 1)
+      return element;
+    elements.push(element);
+  }
+  return elements;
+}
+s.pageName=document.URL.replace( /(\?|#).*$/, '' );
+s.server="www.atmarkit.co.jp"
+s.channel="＠IT"
+s.pageType=""
+s.hier1="root,atmarkit,atit,top"
+s.hier2="atmarkit,atit,top"
+s.hier3="atit,top"
+s.prop1=document.URL.replace( /(\?|#).*$/, '' );
+s.prop2="root,atmarkit,atit,top"
+if ( $('update') == undefined )
+  s.prop3='';
+else
+  s.prop3=$('update').innerHTML.replace(/\d+分\s更新/,"");
+if ( $('byline') == undefined )
+  s.prop4=''
+else
+  s.prop4=$('byline').innerHTML.replace(/<b>|<\/b>/ig,'').replace(/\[|\]/g,'');
+/* s.prop5 : ad link name reserves */
+s.prop5=""
+s.prop6="atit"
+s.prop7="atit,top"
+s.prop8=document.title
+s.prop9=navigator.userAgent
+s.prop10=document.URL.replace( /(\?|#).*$/, '' );
+/* s.prop13 : document.URL reserves */
+/* E-commerce Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events="event3"
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+s.prop20="＠IT"
+s.prop58= resTime();
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.2. -->
+<!-- itmdp start -->
+<script src="/js/itmdp_code.js"></script>
+<script>
+			itmdp.sc2itmdp();
+			var itm_pageview = itmdp.pageview();
+			</script>
+<!-- itmdp end -->
+</div></div>
+<!--/BEACON-->
+<!-- Treasure Data -->
+<script>
+(function(){
+if (location.pathname.search(/\/nl\/|\/mobile\/|\/fav\/|\/pcuser\/|\/ebook\/|\/MASTER\/|\/lifestyle\/|\/dc\/|\/pcupdate\/|\/style\/|\/d-style\/|\/survey\/|\/product\//) != -1) return;
+
+!function(t,e){if(void 0===e[t]){e[t]=function(){e[t].clients.push(this),this._init=[Array.prototype.slice.call(arguments)]},e[t].clients=[];for(var r=function(t){return function(){return this["_"+t]=this["_"+t]||[],this["_"+t].push(Array.prototype.slice.call(arguments)),this}},s=["addRecord","set","trackEvent","trackPageview","trackClicks","ready","fetchGlobalID","fetchUserSegments"],a=0;a<s.length;a++){var c=s[a];e[t].prototype[c]=r(c)}var n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.treasuredata.com/sdk/1.9.2/td.min.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(n,i)}}("Treasure",this);
+// img tag for Logly
+var successCallback = function() {
+    var el = document.createElement('img');
+    el.src = (('https:' == document.location.protocol) ? 'https://' : 'http://')
+           + 'sync.logly.co.jp/sync/sync.gif?ssp_id=618'
+    el.width=1;el.height=1;el.style.display='none';
+    document.body.appendChild(el);
+};
+var getCookie = function(k){
+var cs=document.cookie;
+if(cs){
+var acs=cs.split('; ');
+for(var i=0;i<acs.length;i++){
+var cs=acs[i].split('=');
+if(cs[0]===k){
+return cs[1];
+}
+}
+}
+return '';
+};
+var cX_P=getCookie('cX_P');
+var cX_S=getCookie('cX_S');
+var cX_G=getCookie('cX_G');
+var cX_T=getCookie('cX_T');
+var persisted='cb7d056175548a32fb7b049f5488d3e994880237'; // 他社（フリークアウト／Facebook）広告サーバ用
+var td=new Treasure({host:'in.treasuredata.com',writeKey:'10074/f8a32fad2e11b3499ae935d855ff3bb51cbc592c',database:'cx_segments'});
+var cx_seg=(typeof cx_segments !== 'undefined')?cx_segments:''; // ad 用にで定義済（nl のように空でおりてくる場合がある）
+var push_data = function(cx_seg){
+	td.set('pageviews',{cx_cookie_p:cX_P,cx_cookie_s:cX_S,cx_cookie_g:cX_G,cx_cookie_t:cX_T,'cx_segments':cx_seg,'itm_masterChannel':'ait'});
+	td.set('$global','td_global_id','td_global_id');
+	td.trackPageview('pageviews',successCallback);
+};
+if(cx_seg === ''){ // 空でおりてきた場合に備える
+	var js=addJS('//cdn.cxense.com/cx.js');
+	js.addEventListener('load',function(){
+		cx_seg = cX.getUserSegmentIds({persistedQueryId:persisted});
+		push_data(cx_seg);
+	});
+}else{
+	cx_seg = cX.getUserSegmentIds({persistedQueryId:persisted});
+	push_data(cx_seg);
+}
+})();
+</script>
+<!-- /Treasure Data -->
+<!-- User Insight PCDF Code Start : itmedia.co.jp -->
+<script type="text/javascript">
+var _uic = _uic ||{};
+var _uih = _uih ||{};
+	
+_uih['id'] = 52351; // 技術
+	
+_uih['lg_id'] = (function(cookie_name){
+	var str = '';
+	var val = '';
+	var cookies = '';
+	if(cookie_name){
+		cookies = document.cookie.split('; ');
+		for(var i = 0; i < cookies.length; i++){
+			val = cookies[i].split('=');
+			if(val[0] != cookie_name) continue;
+			str = unescape(val[1].slice(0,40));
+		}
+	}
+	return str;
+})('iitt');
+_uih['fb_id'] = '';
+_uih['tw_id'] = '';
+_uih['uigr_1'] = (function(){ // ドメインパス
+	var str = '';
+	if(typeof itmdp !== 'undefined'){
+		str = itmdp.x_dp;
+	}
+	return str;
+})();
+_uih['uigr_2'] = (function(){ // 著者名
+	var e = document.getElementById('byline');
+	var str = '';
+	if(e){
+		str = e.innerHTML.replace(/<(".*?"|'.*?'|[^'"])*?>/g,'').replace(/(\[|\])/g,'');
+	}
+	return str;
+})();
+_uih['uigr_3'] = (function(){ // ドメインパス
+	var str = '';
+	var arr = '';
+	if(typeof itmdp !== 'undefined'){
+		str = itmdp.x_dp;
+	}
+	arr = str.split(',');
+	str = arr.slice(0,3).join(','); 
+	return str;
+})();
+_uih['uigr_4'] = '';
+_uih['uigr_5'] = '';
+_uih['uigr_6'] = '';
+_uih['uigr_7'] = '';
+_uih['uigr_8'] = '';
+_uih['uigr_9'] = '';
+_uih['uigr_10'] = '';
+
+/* DO NOT ALTER BELOW THIS LINE */
+/* WITH FIRST PARTY COOKIE */
+(function() {
+var bi = document.createElement('script');bi.type = 'text/javascript'; bi.async = true;
+bi.src = '//cs.nakanohito.jp/b3/bi.js';
+var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bi, s);
+})();
+</script>
+<!-- User Insight PCDF Code End : itmedia.co.jp -->
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+fbq('init', '185005748502834');
+fbq('track', "PageView");
+var cX = cX || {}; cX.callQueue = cX.callQueue || [];
+cX.callQueue.push(['invoke',function(){
+	var cx_fb_segments = cX.getUserSegmentIds({persistedQueryId:'8b5a5e7f2de4247858bf30431c9972d3cdf7682e'});
+	if(cx_segments.length || cx_fb_segments.length){
+		fbq('trackCustom','itm_custom',{'cx_seg':cx_segments,'cx_fb_seg':cx_fb_segments});
+	}
+}]);
+</script>
+<noscript><img height="1" src="https://www.facebook.com/tr?id=185005748502834&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/></noscript>
+<!-- End Facebook Pixel Code -->
+<!-- Twitter Tracking Code -->
+<!-- /Twitter Tracking Code -->
+<!-- Pardot -->
+<!-- masterChannel == top|news|business|enterprise|executive|mm|ait|tt|tf|kn|mn|ee|edn|smartjapan|bt -->
+<!-- prFlag ne PR && masterType ne special -->
+<script>
+/*
+piAId = '292242';
+piCId = '1454';
+(function() {
+function async_load(){
+var s = document.createElement('script'); s.type = 'text/javascript';
+s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+}
+if(window.attachEvent) { window.attachEvent('onload', async_load); }
+else { window.addEventListener('load', async_load, false); }
+})();
+*/
+</script>
+<!-- /Pardot -->
+<!-- Global site tag (gtag.js) - Google Ads: 1032582312 -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-1032582312"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','AW-1032582312');
+</script>
+<script>
+(function(){
+var addJS = function(_src,_id){
+	var d = document;
+	var js = d.createElement('script');
+	js.src = _src;
+	if(_id) js.id = _id;
+	d.head.appendChild(js);
+	return js;
+};
+var js=addJS('//cdn.cxense.com/cx.js');
+js.addEventListener('load',function(){
+	cx_seg = cX.getUserSegmentIds({persistedQueryId:'c2d933a3f076195cf38c2ac1d2ba2a879bb2a9a2'});
+	gtag('event','page_view',{'send_to':'AW-1032582312','cx_segments':cx_seg});
+});
+})();
+</script>
+<!-- Global site tag (gtag.js) - Google Ads: 578569290 -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-578569290"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-578569290');
+</script>
+<script>
+(function(){
+var addJS = function(_src,_id){
+	var d = document;
+	var js = d.createElement('script');
+	js.src = _src;
+	if(_id) js.id = _id;
+	d.head.appendChild(js);
+	return js;
+};
+var js=addJS('//cdn.cxense.com/cx.js');
+js.addEventListener('load',function(){
+	cx_seg = cX.getUserSegmentIds({persistedQueryId:'c2d933a3f076195cf38c2ac1d2ba2a879bb2a9a2'});
+	gtag('event','page_view',{'send_to':'AW-578569290','cx_segments':cx_seg});
+});
+})();
+</script>
+<!-- Global site tag (gtag.js) - Google Ads: 10976778865 -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-10976778865"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-10976778865');
+</script>
+<script>
+(function(){
+var addJS = function(_src,_id){
+	var d = document;
+	var js = d.createElement('script');
+	js.src = _src;
+	if(_id) js.id = _id;
+	d.head.appendChild(js);
+	return js;
+};
+var js=addJS('//cdn.cxense.com/cx.js');
+js.addEventListener('load',function(){
+	cx_seg = cX.getUserSegmentIds({persistedQueryId:'c2d933a3f076195cf38c2ac1d2ba2a879bb2a9a2'});
+	gtag('event','page_view',{'send_to':'AW-10976778865','cx_segments':cx_seg});
+});
+})();
+</script>
+<script async="" src="/js/v6_survey.js?date=202002061432"></script>
+</body></html>

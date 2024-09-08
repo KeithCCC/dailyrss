@@ -7,24 +7,18 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import os
 
-st.title("Add one RSS to collection")
-
-def find_rss_xml(url):
+def get_url_title(url):
     try:
         response = requests.get(url)
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
-        rss_links = soup.find_all('link', type='application/rss+xml')
-        
-        results = []
-        for link in rss_links:
-            href = link.get('href')
-            title = link.get('title', 'No Title')
-            results.append({'href': href, 'title': title})
-        
-        return results
+        title = soup.title.string if soup.title else "No title found"
+        return title
     except requests.exceptions.RequestException as e:
         return []  # Return an empty list if there's an error
+
+st.title("Add one RSS to collection")
+
 
 url = st.text_input("URLを入力してください")
 label = st.text_input("ラベルを入力してください")
@@ -32,25 +26,16 @@ label = st.text_input("ラベルを入力してください")
 if st.button("RSSを追加"):
     filename = os.path.join('.', 'default.json')
     df = pd.read_json(filename)
+    
+    already_exist = df['URL'].isin([url]).any()
+    title = get_url_title(url)
 
-    new_row = pd.DataFrame({'URL': [url], 'label': [label]})
-    df = pd.concat([df, new_row], ignore_index=True)
+    if already_exist:
+        st.text(f"{title} はすでに登録されています")
+    else:
+        new_row = pd.DataFrame({'URL': [url], 'label': [label], 'title': [title]})
+        df = pd.concat([df, new_row], ignore_index=True)
 
-    with open(filename, 'w') as file:
+        with open(filename, 'w') as file:
             df.to_json(filename, orient='records')
-
-
-# if 'checkbox_rss' not in st.session_state:
-#         st.session_state.checkbox_rss = {}
-
-# if st.button("RSSを検索"):
-#     rss_feeds = find_rss_xml(url)
-#     with st.form("my_form"):
-#         for i, feed in enumerate(rss_feeds):
-#             st.session_state.checkbox_rss[feed['href']] = st.checkbox(
-#             f"{feed['title']}\n{feed['href']}",
-#             key=f"feed_{i}"
-#         )
-#         submitted = st.form_submit_button("RSSを追加")
-#         if submitted:
-#             st.text(st.session_state.checkbox_rss)
+        st.text("追加しました")

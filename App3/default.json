@@ -1,13 +1,1 @@
-[
-  {
-    "URL": "https://rss.itmedia.co.jp/rss/1.0/ait.xml",
-    "label": "Tech",
-    "title": "Atmark IT"
-  },
-  { "URL": "https://win-tab.net/feed/", "label": "Tech", "title": "WinTab" },
-  {
-    "URL": "https://news.yahoo.co.jp/rss/topics/top-picks.xml",
-    "label": "news",
-    "title": null
-  }
-]
+[{"URL":"https:\/\/pc.watch.impress.co.jp\/data\/rss\/1.0\/pcw\/feed.rdf","label":"pc","title":"PC Watch"},{"URL":"https:\/\/news.yahoo.co.jp\/rss\/topics\/top-picks.xml","label":"news","title":null},{"URL":"https:\/\/news.yahoo.co.jp\/rss\/topics\/it.xml","label":"news","title":"Yahoo!\u30cb\u30e5\u30fc\u30b9\u30fb\u30c8\u30d4\u30c3\u30af\u30b9 - IT "},{"URL":"https:\/\/news.yahoo.co.jp\/rss\/topics\/entertainment.xml","label":"news","title":null},{"URL":"https:\/\/news.yahoo.co.jp\/rss\/topics\/sports.xml","label":"news","title":null},{"URL":"https:\/\/news.yahoo.co.jp\/rss\/categories\/entertainment.xml","label":"news","title":null},{"URL":"https:\/\/news.yahoo.co.jp\/rss\/categories\/it.xml","label":"news","title":null},{"URL":"https:\/\/news.yahoo.co.jp\/rss\/categories\/world.xml","label":"news","title":null},{"URL":"https:\/\/news.yahoo.co.jp\/rss\/categories\/domestic.xml","label":"news","title":null},{"URL":"https:\/\/www.phileweb.com\/\/www.phileweb.com\/rss.php","label":"av","title":null},{"URL":"https:\/\/rss.itmedia.co.jp\/rss\/1.0\/ait.xml","label":"Tech","title":"Atmark IT"},{"URL":"https:\/\/win-tab.net\/feed\/","label":"Tech","title":"WinTab"}]
