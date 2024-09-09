@@ -22,28 +22,56 @@ else:
         for index, row in df.iterrows():
             url = row['URL']
             label = row['label']
-            col1, col2 = st.columns([1, 4])  # Adjust the ratio as needed
-      
-            with col1:
-                st.write(f"({label}) \n {row['title']}\n {url}")
-            with col2:
-                feed = feedparser.parse(url)
-                for entry in feed.entries:
-                    outputstr = ""
-                    if  'title' in entry:
-                        outputstr += "Titl:" + entry.title
-                    if 'published' in entry:
-                        outputstr += "(" + entry.published + ")"
-                        # st.write(entry.published)
-                    # st.write(entry.title)
-                    # st.markdown(f"[click]({entry.link})", unsafe_allow_html=True)
-                    if 'summry' in entry:
-                        outputstr += "Summary:" + entry.summary
-                    # outputstr += "  "  + f"[click]({entry.link})" 
-                    st.markdown(outputstr, unsafe_allow_html=True)
-           
-                    st.write(f"[click]({entry.link})")
-                    st.markdown("---")
+            st.markdown(
+                """
+                <style>
+                .red-text {
+                    color: red;
+                    font-size: 20px;  /* Adjust the size as needed */
+                }
+                .blue-text {
+                    color: blue;
+                    font-size: 20px;  /* Adjust the size as needed */
+                }
+                </style>
+                """,
+                unsafe_allow_html=True
+            )
+            title_line = f"({label}) \n {row['title']})"
+            title_line2 = f"({url})"
+            biggerfontstr =  f'<p class="blue-text"> {title_line}!</p>'
+            biggerfontstr2 =  f'<p class="red-text"> {title_line2}!</p>'
+            st.markdown(biggerfontstr, unsafe_allow_html=True)
+            st.markdown(biggerfontstr2, unsafe_allow_html=True)
+            st.markdown(
+                """
+                <style>
+                .custom-divider {
+                    border-top: 3px solid #ff6347;  /* Change color and thickness */
+                    margin: 25px 0;  /* Adjust spacing */
+                }
+                </style>
+                """,
+                unsafe_allow_html=True
+            )
+            st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
+            feed = feedparser.parse(url)
+            for entry in feed.entries:
+                outputstr = ""
+                if  'title' in entry:
+                    outputstr += entry.title
+                if 'published' in entry:
+                    outputstr += "(" + entry.published + ")"
+                    # st.write(entry.published)
+                # st.write(entry.title)
+                # st.markdown(f"[click]({entry.link})", unsafe_allow_html=True)
+                if 'summry' in entry:
+                    outputstr += "Summary:" + entry.summary
+                # outputstr += "  "  + f"[click]({entry.link})" 
+                st.markdown(outputstr, unsafe_allow_html=True)
+        
+                st.write(f"[click]({entry.link})")
+                st.markdown("---")
 
     except Exception as e:
         st.error(f"An error occurred while processing {label}: {str(e)}")           

@@ -31,14 +31,14 @@ else:
         submitted = st.form_submit_button("Submit")
 
         if submitted:
-            st.text(st.session_state.checkbox_states)
+            # st.text(st.session_state.checkbox_states)
             #  for index in st.session_state.checkbox_states:
             #     if st.session_state.checkbox_states[index]:
             #         st.text(url)
-            st.text(type(st.session_state.checkbox_states))
-            #TODO: add to currrent db and save
+            # st.text(type(st.session_state.checkbox_states))
+            # TODO: add to currrent db and save
             selected_df = df[df.index.isin([idx for idx, checked in st.session_state.checkbox_states.items() if checked])]
-            st.dataframe(selected_df)
+            # st.dataframe(selected_df)
 
             try:
                     for index, row in selected_df.iterrows():
@@ -53,7 +53,8 @@ else:
                             for entry in feed.entries:
                                 outputstr = ""
                                 if  'title' in entry:
-                                    outputstr += "Titl:" + entry.title
+                                    # outputstr += "Titl:" + entry.title
+                                    outputstr += entry.title
                                 if 'published' in entry:
                                     outputstr += "(" + entry.published + ")"
                                     # st.write(entry.published)

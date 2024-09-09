@@ -31,3 +31,6 @@ custom_order = ['title', 'label', 'URL']
 
 # Display the dataframe with custom column order
 st.dataframe(df_sorted, column_order=custom_order)
+
+#todo: disp filter by label
+#todo: disp filter today
