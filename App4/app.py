@@ -1,32 +1,32 @@
-import atexit
+# import atexit
 from turtle import right, width
 from bottle import route, run, template, request, redirect
 import os
 import pandas as pd
 import json
 import feedparser
-import webbrowser
+# import webbrowser
 
-def save_to_default_json(df):
-    # Sort the DataFrame by 'label' and then by 'title'
-    df_sorted = df.sort_values(by=['label', 'title'])
-    print(df)
-    print(df_sorted)
-    df_sorted.to_json('default.json', orient='records')
+# def save_to_default_json(df):
+#     # Sort the DataFrame by 'label' and then by 'title'
+#     df_sorted = df.sort_values(by=['label', 'title'])
+#     print(df)
+#     print(df_sorted)
+#     df_sorted.to_json('default.json', orient='records')
     
-def open_browser():
-    global BROWSER_INSTANCE
-    BROWSER_INSTANCE = webbrowser.open('http://localhost:8080', new=2)
+# def open_browser():
+#     global BROWSER_INSTANCE
+#     BROWSER_INSTANCE = webbrowser.open('http://localhost:8080', new=2)
 
-# Function to close the browser
-def close_browser():
-    if BROWSER_INSTANCE:
-        if os.name == 'nt':  # Windows
-            os.system("taskkill /im chrome.exe /f")
-        else:  # macOS and Linux
-            os.system("pkill -f chrome")
+# # Function to close the browser
+# def close_browser():
+#     if BROWSER_INSTANCE:
+#         if os.name == 'nt':  # Windows
+#             os.system("taskkill /im chrome.exe /f")
+#         else:  # macOS and Linux
+#             os.system("pkill -f chrome")
 
-atexit.register(close_browser)
+# atexit.register(close_browser)
     
 @route('/')
 def home():
@@ -110,7 +110,7 @@ def home():
         </html>
         '''
     # Open the browser when the program starts
-open_browser()
+# open_browser()
 
 # Add this new route to handle ending the program
 @route('/end_program')
