@@ -1,8 +1,11 @@
+import atexit
+from turtle import right, width
 from bottle import route, run, template, request, redirect
 import os
 import pandas as pd
 import json
 import feedparser
+import webbrowser
 
 def save_to_default_json(df):
     # Sort the DataFrame by 'label' and then by 'title'
@@ -10,6 +13,20 @@ def save_to_default_json(df):
     print(df)
     print(df_sorted)
     df_sorted.to_json('default.json', orient='records')
+    
+def open_browser():
+    global BROWSER_INSTANCE
+    BROWSER_INSTANCE = webbrowser.open('http://localhost:8080', new=2)
+
+# Function to close the browser
+def close_browser():
+    if BROWSER_INSTANCE:
+        if os.name == 'nt':  # Windows
+            os.system("taskkill /im chrome.exe /f")
+        else:  # macOS and Linux
+            os.system("pkill -f chrome")
+
+atexit.register(close_browser)
     
 @route('/')
 def home():
@@ -92,6 +109,8 @@ def home():
         </body>
         </html>
         '''
+    # Open the browser when the program starts
+open_browser()
 
 # Add this new route to handle ending the program
 @route('/end_program')
@@ -143,6 +162,11 @@ def rss():
             a {{ color: #4CAF50; text-decoration: none; }}
             a:hover {{ text-decoration: underline; }}
             .button {{ display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; margin-bottom: 20px; }}
+            img {{
+                max-width: 300px; /* Image will not be wider than its container */
+                height: auto;    /* Maintain aspect ratio */
+                object-fit: cover; /* Cover the container while maintaining aspect ratio */
+            }}
         </style>
     </head>
     <body>
@@ -258,6 +282,11 @@ def view_multiple_feeds():
                         a {{ color: #4CAF50; text-decoration: none; }}
                         a:hover {{ text-decoration: underline; }}
                         .button {{ display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; margin-bottom: 20px; }}
+                        img {{
+                            max-width: 300px; /* Image will not be wider than its container */
+                            height: auto;    /* Maintain aspect ratio */
+                            object-fit: cover; /* Cover the container while maintaining aspect ratio */
+                        }}
                     </style>
                 </head>
                 <body>
@@ -370,6 +399,11 @@ def save_feed():
             a {{ color: #4CAF50; text-decoration: none; }}
             a:hover {{ text-decoration: underline; }}
             .button {{ display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; margin-bottom: 20px; }}
+            img {{
+                max-width: 300px; /* Image will not be wider than its container */
+                height: auto;    /* Maintain aspect ratio */
+                object-fit: cover; /* Cover the container while maintaining aspect ratio */
+            }}
         </style>
     </head>
     <body>
@@ -455,7 +489,7 @@ def rss_single(row_index):
                 entry_output = []
                 if 'title' in entry:
                     entry_output.append(f"<strong>{entry.title}</strong>")
-                if 'published' in entry:
+                if 'publi8shed' in entry:
                     entry_output.append(f"<em>({entry.published})</em>")
                 if 'link' in entry:
                     entry_output.append(f'<a href="{entry.link}" target="_blank">Read more</a>')
@@ -480,6 +514,11 @@ def rss_single(row_index):
                     a {{ color: #4CAF50; text-decoration: none; }}
                     a:hover {{ text-decoration: underline; }}
                     .button {{ display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; margin-bottom: 20px; }}
+                    img {{
+                        max-width: 300px; /* Image will not be wider than its container */
+                        height: auto;    /* Maintain aspect ratio */
+                        object-fit: cover; /* Cover the container while maintaining aspect ratio */
+                    }}
                 </style>
             </head>
             <body>
@@ -783,6 +822,11 @@ def view_feeds_by_labels():
                         a {{ color: #4CAF50; text-decoration: none; }}
                         a:hover {{ text-decoration: underline; }}
                         .button {{ display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; margin-bottom: 20px; }}
+                        img {{
+                            max-width: 300px; /* Image will not be wider than its container */
+                            height: auto;    /* Maintain aspect ratio */
+                            object-fit: cover; /* Cover the container while maintaining aspect ratio */
+                        }}
                     </style>
                 </head>
                 <body>
