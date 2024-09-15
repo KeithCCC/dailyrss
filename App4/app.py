@@ -4,9 +4,17 @@ import pandas as pd
 import json
 import feedparser
 
+def save_to_default_json(df):
+    # Sort the DataFrame by 'label' and then by 'title'
+    df_sorted = df.sort_values(by=['label', 'title'])
+    print(df)
+    print(df_sorted)
+    df_sorted.to_json('default.json', orient='records')
+    
 @route('/')
 def home():
     filename = "default.json"
+    # PROGRAM_TITLE = "CC Daily RSS Reader"
     if os.path.exists(filename):
         try:
             df = pd.read_json(filename)
@@ -32,6 +40,7 @@ def home():
             return f'''
             <html>
             <head>
+                <title>CC RSS Reader</title>
                 <style>
                     body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }}
                     h1 {{ color: #333; text-align: center; }}
@@ -49,7 +58,9 @@ def home():
                     <a href="/rss" class="button">View All Feeds</a>
                     <a href="/select_multiple_feeds" class="button">Select Multiple Feeds</a>
                     <a href="/add_feed" class="button">Add New Feed</a>
+                    <a href="/select_labels" class="button">Select Labels</a> <!-- Added button -->
                     <a href="/end_program" class="button end-button">End Program</a>
+
                 </div>
                 <table class="table">
                     <tr>
@@ -296,9 +307,9 @@ def add_feed():
 
 @route('/save_feed', method='POST')
 def save_feed():
-    label = request.forms.get('label')
-    title = request.forms.get('title')
-    url = request.forms.get('url')
+    label = request.forms.getunicode('label')
+    title = request.forms.getunicode('title')
+    url = request.forms.getunicode('url')
     
     filename = "default.json"
     if os.path.exists(filename):
@@ -308,7 +319,9 @@ def save_feed():
     
     new_row = pd.DataFrame({'label': [label], 'title': [title], 'URL': [url]})
     df = pd.concat([df, new_row], ignore_index=True)
-    df.to_json(filename, orient='records')
+    ## save json
+    # df.to_json(filename, orient='records')
+    save_to_default_json(df)
     
     return redirect('/')
 
@@ -602,15 +615,16 @@ def update_feed(row_index):
             if row_index < 0 or row_index >= len(df):
                 return f"Invalid row index. Please provide a number between 0 and {len(df) - 1}."
             
-            label = request.forms.get('label')
-            title = request.forms.get('title')
-            url = request.forms.get('url')
+            label = request.forms.getunicode('label')
+            title = request.forms.getunicode('title')
+            url = request.forms.getunicode('url')
             
             df.at[row_index, 'label'] = label
             df.at[row_index, 'title'] = title
             df.at[row_index, 'URL'] = url
             
-            df.to_json(filename, orient='records')
+            # df.to_json(filename, orient='records')
+            save_to_default_json(df)
             
             return '''
             <html>
@@ -642,7 +656,8 @@ def delete_feed(row_index):
                 return f"Invalid row index. Please provide a number between 0 and {len(df) - 1}."
             
             df = df.drop(df.index[row_index])
-            df.to_json(filename, orient='records')
+            # df.to_json(filename, orient='records')
+            save_to_default_json(df)
             
             return '''
             <html>

@@ -14,3 +14,5 @@ if __name__ == '__main__':
     
     # Run the Bottle application
     bottle.run(host='localhost', port=8080)
+    
+    # todo: display program title as site name in the browser title
