@@ -47,9 +47,9 @@ def home():
                         <td>{row['title']}</td>
                         <td>{row['URL']}</td>
                         <td>
+                            <a href="/rss_single/{index}" class="button">View</a>
                             <a href="/edit_feed/{index}" class="button">Edit</a>
                             <a href="/delete_feed/{index}" class="button" onclick="return confirm('Are you sure you want to delete this feed?')">Delete</a>
-                            <a href="/rss_single/{index}" class="button">View</a>
                         </td>
                     </tr>
                 ''')
@@ -61,13 +61,13 @@ def home():
             <head>
                 <title>CC RSS Reader</title>
                 <style>
-                    body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }}
+                    body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; }}
                     h1 {{ color: #333; text-align: center; }}
-                    .table {{ border-collapse: collapse; width: 100%; margin-top: 20px; }}
+                    .table {{ border-collapse: collapse; width: 100%; margin-top: 10px; }}
                     .table th, .table td {{ border: 1px solid #ddd; padding: 8px; }}
                     .table tr:nth-child(even) {{ background-color: #f2f2f2; }}
-                    .button {{ display: inline-block; padding: 5px 10px; background-color: #4CAF50; color: white; text-decoration: none; margin: 2px; }}
-                    .action-buttons {{ text-align: center; margin-bottom: 20px; }}
+                    .button {{ display: inline-block; padding: 4x 8px; background-color: #4CAF50; color: white; text-decoration: none; margin: 2px; }}
+                    .action-buttons {{ text-align: center; margin-bottom: 8px; }}
                     .end-button {{ background-color: #f44336; }} /* Red color for end button */
                 </style>
             </head>
@@ -101,7 +101,7 @@ def home():
         <head>
             <style>
                 body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; text-align: center; }
-                .message { font-size: 18px; margin-bottom: 20px; }
+                .message { font-size: 16px; margin-bottom: 10px; }
                 .button { display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; margin: 10px; }
             </style>
         </head>
@@ -156,11 +156,11 @@ def rss():
     <html>
     <head>
         <style>
-            body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }}
+            body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; }}
             h2 {{ color: #333; }}
             h3 {{ color: #666; }}
             ul {{ list-style-type: none; padding: 0; }}
-            li {{ margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px; }}
+            li {{ margin-bottom: 5px; border-bottom: 1px solid #eee; padding-bottom: 10px; }}
             a {{ color: #4CAF50; text-decoration: none; }}
             a:hover {{ text-decoration: underline; }}
             .button {{ display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; margin-bottom: 20px; }}
@@ -169,10 +169,15 @@ def rss():
                 height: auto;    /* Maintain aspect ratio */
                 object-fit: cover; /* Cover the container while maintaining aspect ratio */
             }}
+            .separator {{
+                        border-top: 1px solid #7DB560; /* Change color to green */
+                        margin: 20px 0;
+                    }}
         </style>
     </head>
     <body>
         <a href="/" class="button">Home</a>
+        <div class="separator"></div>
         {htmlstr}
     </body>
     </html>
@@ -276,11 +281,11 @@ def view_multiple_feeds():
                 <html>
                 <head>
                     <style>
-                        body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }}
+                        body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; }}
                         h2 {{ color: #333; }}
                         h3 {{ color: #666; }}
                         ul {{ list-style-type: none; padding: 0; }}
-                        li {{ margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px; }}
+                        li {{ margin-bottom: 5px; border-bottom: 1px solid #eee; padding-bottom: 10px; }}
                         a {{ color: #4CAF50; text-decoration: none; }}
                         a:hover {{ text-decoration: underline; }}
                         .button {{ display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; margin-bottom: 20px; }}
@@ -289,11 +294,16 @@ def view_multiple_feeds():
                             height: auto;    /* Maintain aspect ratio */
                             object-fit: cover; /* Cover the container while maintaining aspect ratio */
                         }}
+                        .separator {{
+                            border-top: 1px solid #7DB560; /* Change color to green */
+                            margin: 20px 0;
+                        }}
                     </style>
                 </head>
                 <body>
                     <a href="/" class="button">Home</a>
                     <a href="/select_multiple_feeds" class="button">Back to Selection</a>
+                    <div class="separator"></div>
                     {htmlstr}
                 </body>
                 </html>
@@ -500,11 +510,11 @@ def rss_single(row_index):
             <html>
             <head>
                 <style>
-                    body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }}
+                    body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; }}
                     h2 {{ color: #333; }}
                     h3 {{ color: #666; }}
                     ul {{ list-style-type: none; padding: 0; }}
-                    li {{ margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px; }}
+                    li {{ margin-bottom: 5px; border-bottom: 1px solid #eee; padding-bottom: 10px; }}
                     a {{ color: #4CAF50; text-decoration: none; }}
                     a:hover {{ text-decoration: underline; }}
                     .button {{ display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; margin-bottom: 20px; }}
@@ -513,10 +523,15 @@ def rss_single(row_index):
                         height: auto;    /* Maintain aspect ratio */
                         object-fit: cover; /* Cover the container while maintaining aspect ratio */
                     }}
+                    .separator {{
+                        border-top: 1px solid #7DB560; /* Change color to green */
+                        margin: 20px 0;
+                    }}
                 </style>
             </head>
             <body>
                 <a href="/" class="button">Home</a>
+                <div class="separator"></div>
                 {htmlstr}
             </body>
             </html>
@@ -607,7 +622,7 @@ def edit_feed(row_index):
             <html>
             <head>
                 <style>
-                    body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; text-align: center; }}
+                    body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; text-align: center; }}
                     form {{ max-width: 500px; margin: 0 auto; }}
                     label {{ display: block; margin-top: 10px; }}
                     input[type="text"] {{ width: 100%; padding: 5px; margin-top: 5px; }}
@@ -812,28 +827,32 @@ def view_feeds_by_labels():
                 htmlstr = "\n".join(output)
                 return f'''
                 <html>
-                <head>
-                    <style>
-                        body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }}
-                        h2 {{ color: #333; }}
-                        h3 {{ color: #666; }}
-                        ul {{ list-style-type: none; padding: 0; }}
-                        li {{ margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px; }}
-                        a {{ color: #4CAF50; text-decoration: none; }}
-                        a:hover {{ text-decoration: underline; }}
-                        .button {{ display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; margin-bottom: 20px; }}
-                        img {{
-                            max-width: 300px; /* Image will not be wider than its container */
-                            height: auto;    /* Maintain aspect ratio */
-                            object-fit: cover; /* Cover the container while maintaining aspect ratio */
-                        }}
-                    </style>
-                </head>
-                <body>
-                    <a href="/" class="button">Home</a>
-                    <a href="/select_labels" class="button">Back to Selection</a>
-                    {htmlstr}
-                </body>
+                    <head>
+                        <style>
+                            body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; }}
+                            h2 {{ color: #333; }}
+                            h3 {{ color: #666; }}
+                            ul {{ list-style-type: none; padding: 0; }}
+                            li {{ margin-bottom: 5px; border-bottom: 1px solid #eee; padding-bottom: 10px; }}
+                            a {{ color: #4CAF50; text-decoration: none; }}
+                            a:hover {{ text-decoration: underline; }}
+                            .button {{ display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; margin-bottom: 20px; }}
+                            img {{
+                                max-width: 300px; /* Image will not be wider than its container */
+                                height: auto;    /* Maintain aspect ratio */
+                                object-fit: cover; /* Cover the container while maintaining aspect ratio */
+                            }}
+                            .separator {{
+                                border-top: 1px solid #7DB560; /* Change color to green */
+                                margin: 20px 0;
+                            }}
+                        </style>
+                    </head>
+                    <body>
+                        <a href="/" class="button">Home</a>
+                        <div class="separator"></div>
+                        {htmlstr}
+                    </body>
                 </html>
                 '''
             except Exception as e:
