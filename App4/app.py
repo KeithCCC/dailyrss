@@ -12,8 +12,8 @@ from bs4 import BeautifulSoup
 def save_to_default_json(df):
     # Sort the DataFrame by 'label' and then by 'title'
     df_sorted = df.sort_values(by=['label', 'title'])
-    print(df)
-    print(df_sorted)
+    # print(df)
+    # print(df_sorted)
     df_sorted.to_json('default.json', orient='records')
     
 # def open_browser():
