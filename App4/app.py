@@ -12,8 +12,8 @@ from bs4 import BeautifulSoup
 def save_to_default_json(df):
     # Sort the DataFrame by 'label' and then by 'title'
     df_sorted = df.sort_values(by=['label', 'title'])
-    print(df)
-    print(df_sorted)
+    # print(df)
+    # print(df_sorted)
     df_sorted.to_json('default.json', orient='records')
     
 # def open_browser():
@@ -33,7 +33,6 @@ def save_to_default_json(df):
 @route('/')
 def home():
     filename = "default.json"
-    # PROGRAM_TITLE = "CC Daily RSS Reader"
     if os.path.exists(filename):
         try:
             df = pd.read_json(filename)
@@ -61,24 +60,25 @@ def home():
             <head>
                 <title>CC RSS Reader</title>
                 <style>
-                    body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; }}
-                    h1 {{ color: #333; text-align: center; }}
+                    body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; background-color: #000; color: #fff; }}
+                    h1 {{ color: #4CAF50; text-align: center; }}
                     .table {{ border-collapse: collapse; width: 100%; margin-top: 10px; }}
-                    .table th, .table td {{ border: 1px solid #ddd; padding: 8px; }}
-                    .table tr:nth-child(even) {{ background-color: #f2f2f2; }}
-                    .button {{ display: inline-block; padding: 4x 8px; background-color: #4CAF50; color: white; text-decoration: none; margin: 2px; }}
+                    .table th, .table td {{ border: 1px solid #333; padding: 8px; }}
+                    .table tr:nth-child(even) {{ background-color: #111; }}
+                    .button {{ display: inline-block; padding: 4px 8px; background-color: #4CAF50; color: white; text-decoration: none; margin: 2px; }}
                     .action-buttons {{ text-align: center; margin-bottom: 8px; }}
                     .end-button {{ background-color: #f44336; }} /* Red color for end button */
+                    a {{ color: #4CAF50; }}
                 </style>
             </head>
             <body>
                 <h1>RSS Feed Manager</h1>
                 <div class="action-buttons">
-                    <a href="/rss" class="button">View All Feeds</a>
-                    <a href="/select_multiple_feeds" class="button">Select Multiple Feeds</a>
-                    <a href="/add_feed" class="button">Add New Feed</a>
-                    <a href="/select_labels" class="button">Select Labels</a> <!-- Added button -->
-                    <a href="/find_feeds" class="button">Find Feeds</a>
+                    <a href="/rss" class="button">All RSS</a>
+                    <a href="/select_multiple_feeds" class="button">RSS by selection</a>
+                    <a href="/select_labels" class="button">RSS by labels</a>
+                    <a href="/find_feeds" class="button">Find RSS</a>
+                    <a href="/add_feed" class="button">Add New RSS</a>
                     <a href="/end_program" class="button end-button">End Program</a>
                 </div>
                 <table class="table">
@@ -100,7 +100,7 @@ def home():
         <html>
         <head>
             <style>
-                body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; text-align: center; }
+                body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; text-align: center; background-color: #000; color: #fff; }
                 .message { font-size: 16px; margin-bottom: 10px; }
                 .button { display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; margin: 10px; }
             </style>
@@ -156,23 +156,23 @@ def rss():
     <html>
     <head>
         <style>
-            body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; }}
-            h2 {{ color: #333; }}
-            h3 {{ color: #666; }}
+            body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; background-color: #000; color: #fff; }}
+            h2 {{ color: #4CAF50; }}
+            h3 {{ color: #999; }}
             ul {{ list-style-type: none; padding: 0; }}
-            li {{ margin-bottom: 5px; border-bottom: 1px solid #eee; padding-bottom: 10px; }}
+            li {{ margin-bottom: 5px; border-bottom: 1px solid #333; padding-bottom: 10px; }}
             a {{ color: #4CAF50; text-decoration: none; }}
             a:hover {{ text-decoration: underline; }}
             .button {{ display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; margin-bottom: 20px; }}
             img {{
-                max-width: 300px; /* Image will not be wider than its container */
-                height: auto;    /* Maintain aspect ratio */
-                object-fit: cover; /* Cover the container while maintaining aspect ratio */
+                max-width: 300px;
+                height: auto;
+                object-fit: cover;
             }}
             .separator {{
-                        border-top: 1px solid #7DB560; /* Change color to green */
-                        margin: 20px 0;
-                    }}
+                border-top: 1px solid #4CAF50;
+                margin: 20px 0;
+            }}
         </style>
     </head>
     <body>
@@ -208,10 +208,14 @@ def select_multiple_feeds():
             <html>
             <head>
                 <style>
+                    body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; background-color: #000; color: #fff; }}
+                    h1 {{ color: #4CAF50; text-align: center; }}
                     .table {{ border-collapse: collapse; width: 100%; }}
-                    .table th, .table td {{ border: 1px solid #ddd; padding: 8px; }}
-                    .table tr:nth-child(even) {{ background-color: #f2f2f2; }}
+                    .table th, .table td {{ border: 1px solid #333; padding: 8px; }}
+                    .table tr:nth-child(even) {{ background-color: #111; }}
                     .button {{ display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; margin-top: 20px; }}
+                    input[type="checkbox"] {{ margin-right: 10px; }}
+                    input[type="submit"] {{ background-color: #4CAF50; color: white; border: none; padding: 10px 20px; cursor: pointer; }}
                 </style>
             </head>
             <body>
@@ -227,6 +231,64 @@ def select_multiple_feeds():
                         {table}
                     </table>
                     <input type="submit" value="View Selected Feeds" class="button">
+                </form>
+                <a href="/" class="button">Home</a>
+            </body>
+            </html>
+            '''
+            return html_template.format(table=table_content)
+        except Exception as e:
+            return f"Error processing data: {str(e)}"
+    else:
+        return 'default.json does not exist'
+
+@route('/select_labels')
+def select_labels():
+    filename = "default.json"
+    if os.path.exists(filename):
+        try:
+            df = pd.read_json(filename)
+            
+            # Get unique labels
+            labels = df['label'].unique()
+            
+            # Create HTML table with checkboxes for label selection
+            table_rows = []
+            for label in labels:
+                table_rows.append(f'''
+                    <tr>
+                        <td><input type="checkbox" name="selected_labels" value="{label}"></td>
+                        <td>{label}</td>
+                    </tr>
+                ''')
+            
+            table_content = '\n'.join(table_rows)
+            
+            html_template = '''
+            <html>
+            <head>
+                <style>
+                    body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; background-color: #000; color: #fff; }}
+                    h1 {{ color: #4CAF50; text-align: center; }}
+                    .table {{ border-collapse: collapse; width: 100%; }}
+                    .table th, .table td {{ border: 1px solid #333; padding: 8px; }}
+                    .table tr:nth-child(even) {{ background-color: #111; }}
+                    .button {{ display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; margin-top: 20px; }}
+                    input[type="checkbox"] {{ margin-right: 10px; }}
+                    input[type="submit"] {{ background-color: #4CAF50; color: white; border: none; padding: 10px 20px; cursor: pointer; }}
+                </style>
+            </head>
+            <body>
+                <h1>Select Labels</h1>
+                <form action="/view_feeds_by_labels" method="post">
+                    <table class="table">
+                        <tr>
+                            <th>Select</th>
+                            <th>Label</th>
+                        </tr>
+                        {table}
+                    </table>
+                    <input type="submit" value="View Feeds" class="button">
                 </form>
                 <a href="/" class="button">Home</a>
             </body>
@@ -281,21 +343,21 @@ def view_multiple_feeds():
                 <html>
                 <head>
                     <style>
-                        body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; }}
-                        h2 {{ color: #333; }}
-                        h3 {{ color: #666; }}
+                        body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; background-color: #000; color: #fff; }}
+                        h2 {{ color: #4CAF50; }}
+                        h3 {{ color: #999; }}
                         ul {{ list-style-type: none; padding: 0; }}
-                        li {{ margin-bottom: 5px; border-bottom: 1px solid #eee; padding-bottom: 10px; }}
+                        li {{ margin-bottom: 5px; border-bottom: 1px solid #333; padding-bottom: 10px; }}
                         a {{ color: #4CAF50; text-decoration: none; }}
                         a:hover {{ text-decoration: underline; }}
                         .button {{ display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; margin-bottom: 20px; }}
                         img {{
-                            max-width: 300px; /* Image will not be wider than its container */
-                            height: auto;    /* Maintain aspect ratio */
-                            object-fit: cover; /* Cover the container while maintaining aspect ratio */
+                            max-width: 300px;
+                            height: auto;
+                            object-fit: cover;
                         }}
                         .separator {{
-                            border-top: 1px solid #7DB560; /* Change color to green */
+                            border-top: 1px solid #4CAF50;
                             margin: 20px 0;
                         }}
                     </style>
@@ -321,8 +383,8 @@ def add_feed():
     <html>
     <head>
         <style>
-            body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
-            h1 { color: #333; text-align: center; }
+            body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; background-color: #000; color: #fff; }
+            h1 { color: #4CAF50; text-align: center; }
             form { margin: 0 auto; width: 300px; }
             label { display: block; margin-bottom: 5px; }
             input[type="text"] { width: 100%; padding: 8px; margin-bottom: 10px; }
@@ -372,8 +434,8 @@ def find_feeds():
     <html>
     <head>
         <style>
-            body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
-            h1 { color: #333; text-align: center; }
+            body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; background-color: #000; color: #fff; }
+            h1 { color: #4CAF50; text-align: center; }
             form { margin: 0 auto; width: 300px; }
             label { display: block; margin-bottom: 5px; }
             input[type="text"] { width: 100%; padding: 8px; margin-bottom: 10px; }
@@ -426,12 +488,12 @@ def list_feeds():
     <html>
     <head>
         <style>
-            body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }}
-            h1 {{ color: #333; text-align: center; }}
+            body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; background-color: #000; color: #fff; }}
+            h1 {{ color: #4CAF50; text-align: center; }}
             form {{ margin: 0 auto; width: 600px; }}
             table {{ width: 100%; border-collapse: collapse; }}
-            th, td {{ border: 1px solid #ddd; padding: 8px; text-align: left; }}
-            th {{ background-color: #f2f2f2; }}
+            th, td {{ border: 1px solid #333; padding: 8px; text-align: left; }}
+            th {{ background-color: #111; }}
             input[type="submit"] {{ background-color: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer; }}
             .button {{ display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; margin-top: 20px; }}
         </style>
@@ -753,10 +815,14 @@ def select_labels():
             <html>
             <head>
                 <style>
+                    body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; background-color: #000; color: #fff; }}
+                    h1 {{ color: #4CAF50; text-align: center; }}
                     .table {{ border-collapse: collapse; width: 100%; }}
-                    .table th, .table td {{ border: 1px solid #ddd; padding: 8px; }}
-                    .table tr:nth-child(even) {{ background-color: #f2f2f2; }}
+                    .table th, .table td {{ border: 1px solid #333; padding: 8px; }}
+                    .table tr:nth-child(even) {{ background-color: #111; }}
                     .button {{ display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; margin-top: 20px; }}
+                    input[type="checkbox"] {{ margin-right: 10px; }}
+                    input[type="submit"] {{ background-color: #4CAF50; color: white; border: none; padding: 10px 20px; cursor: pointer; }}
                 </style>
             </head>
             <body>
@@ -798,13 +864,13 @@ def view_feeds_by_labels():
                     title = label_df['title'].values[0] if not label_df.empty else 'No title found'
                     
                     output.append(f"<h2>{label}</h2>")
-                    output.append(f"<h2>{title}</h2>")
+                    output.append(f"<h3>{title}</h3>")
                     output.append("<ul>")
                     
                     for _, row in label_df.iterrows():
                         url = row['URL']
                         title = row['title']
-                        output.append(f"<h3>{title}</h3>")
+                        output.append(f"<h4>{title}</h4>")
                         feed = feedparser.parse(url)
                         
                         for entry in feed.entries[:5]:  # Limit to 5 entries per feed
@@ -829,27 +895,33 @@ def view_feeds_by_labels():
                 <html>
                     <head>
                         <style>
-                            body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; }}
-                            h2 {{ color: #333; }}
-                            h3 {{ color: #666; }}
+                            body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; background-color: #000; color: #fff; }}
+                            h2 {{ color: #4CAF50; }}
+                            h3, h4 {{ color: #8BC34A; }}
                             ul {{ list-style-type: none; padding: 0; }}
-                            li {{ margin-bottom: 5px; border-bottom: 1px solid #eee; padding-bottom: 10px; }}
+                            li {{ margin-bottom: 5px; border-bottom: 1px solid #333; padding-bottom: 10px; }}
                             a {{ color: #4CAF50; text-decoration: none; }}
                             a:hover {{ text-decoration: underline; }}
                             .button {{ display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; margin-bottom: 20px; }}
                             img {{
-                                max-width: 300px; /* Image will not be wider than its container */
-                                height: auto;    /* Maintain aspect ratio */
-                                object-fit: cover; /* Cover the container while maintaining aspect ratio */
+                                max-width: 300px;
+                                height: auto;
+                                object-fit: cover;
                             }}
                             .separator {{
-                                border-top: 1px solid #7DB560; /* Change color to green */
+                                border-top: 1px solid #4CAF50;
+                                margin: 20px 0;
+                            }}
+                            hr {{
+                                border: 0;
+                                border-top: 1px solid #333;
                                 margin: 20px 0;
                             }}
                         </style>
                     </head>
                     <body>
                         <a href="/" class="button">Home</a>
+                        <a href="/select_labels" class="button">Back to Labels</a>
                         <div class="separator"></div>
                         {htmlstr}
                     </body>
