@@ -555,10 +555,10 @@ def rss_single(row_index):
                 entry_output = []
                 if 'title' in entry:
                     entry_output.append(f"<strong>{entry.title}</strong>")
-                if 'publi8shed' in entry:
-                    entry_output.append(f"<em>({entry.published})</em>")
                 if 'link' in entry:
-                    entry_output.append(f'<a href="{entry.link}" target="_blank">Read more</a>')
+                    entry_output.append(f'<span style="float: right;"><a href="{entry.link}" target="_blank">Read more</a></span>')
+                if 'published' in entry:  # Corrected typo from 'publi8shed' to 'published'
+                    entry_output.append(f"<em>({entry.published})</em>")
                 if 'summary' in entry:
                     summary = entry.summary[:200] + '...' if len(entry.summary) > 200 else entry.summary
                     entry_output.append(f"<p>{summary}</p>")
@@ -572,21 +572,21 @@ def rss_single(row_index):
             <html>
             <head>
                 <style>
-                    body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; }}
-                    h2 {{ color: #333; }}
-                    h3 {{ color: #666; }}
+                    body {{ font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; background-color: #000; color: #fff; }}
+                    h2 {{ color: #4CAF50; }}
+                    h3 {{ color: #999; }}
                     ul {{ list-style-type: none; padding: 0; }}
-                    li {{ margin-bottom: 5px; border-bottom: 1px solid #eee; padding-bottom: 10px; }}
+                    li {{ margin-bottom: 5px; border-bottom: 1px solid #333; padding-bottom: 10px; }}
                     a {{ color: #4CAF50; text-decoration: none; }}
                     a:hover {{ text-decoration: underline; }}
                     .button {{ display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; margin-bottom: 20px; }}
                     img {{
-                        max-width: 300px; /* Image will not be wider than its container */
-                        height: auto;    /* Maintain aspect ratio */
-                        object-fit: cover; /* Cover the container while maintaining aspect ratio */
+                        max-width: 300px;
+                        height: auto;
+                        object-fit: cover;
                     }}
                     .separator {{
-                        border-top: 1px solid #7DB560; /* Change color to green */
+                        border-top: 1px solid #4CAF50;
                         margin: 20px 0;
                     }}
                 </style>
