@@ -9,9 +9,12 @@ with open('default.json', 'r') as file:
 # Prepare the layout for displaying URLs and titles with buttons
 layout = [
     [
-        eg.Text(f"{item['title']}: {item['url']}", size=(80, 1), font=("Arial", 12)),
-        eg.Button("Open", key=item['url'])  # Add a button for each URL
-    ] for item in data
+        eg.Table(
+            data=[(item['title'][:20], item['url']) for item in data],  # Create table data
+            headings=["Title", "URL"],  # Define table headings
+            key=[item['url'] for item in data]  # Use a list of URLs as keys for button actions
+        )
+    ]
 ]
 
 # Create a window

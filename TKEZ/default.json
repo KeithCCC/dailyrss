@@ -1,0 +1,109 @@
+[
+  {
+    "title": " AI News",
+    "label": "AI",
+    "url": "https://artificialintelligence-news.com/feed"
+  },
+  {
+    "title": "Feed: Artificial Intelligence Latest",
+    "label": "AI",
+    "url": "https://www.wired.com/feed/tag/ai/latest/rss"
+  },
+  {
+    "title": "ITmedia AI",
+    "label": "AI",
+    "url": "https://www.itmedia.co.jp/aiplus/subtop/news/index.html"
+  },
+  { "title": "OpenAI", "label": "AI", "url": "https://openai.com/index/rss/" },
+  {
+    "title": "Yahoo finance ",
+    "label": "Finance",
+    "url": "https://news.yahoo.co.jp/rss/categories/business.xml"
+  },
+  {
+    "title": " スポーツ - Yahoo!ニュース",
+    "label": "NEWS",
+    "url": "https://news.yahoo.co.jp/rss/categories/sports.xml"
+  },
+  {
+    "title": "Yahoo エンタメ",
+    "label": "NEWS",
+    "url": "https://news.yahoo.co.jp/rss/categories/entertainment.xml"
+  },
+  {
+    "title": "はてブ",
+    "label": "NEWS",
+    "url": "https://b.hatena.ne.jp/hotentry/it.rss"
+  },
+  {
+    "title": "はてブ all",
+    "label": "NEWS",
+    "url": "https://b.hatena.ne.jp/hotentry.rss"
+  },
+  {
+    "title": "ビジネスジャーナル",
+    "label": "NEWS",
+    "url": "https://biz-journal.jp/index.xml"
+  },
+  {
+    "title": "国内 - Yahoo!ニュース",
+    "label": "NEWS",
+    "url": "https://news.yahoo.co.jp/rss/categories/domestic.xml"
+  },
+  {
+    "title": "国際 - Yahoo!ニュース",
+    "label": "NEWS",
+    "url": "https://news.yahoo.co.jp/rss/categories/world.xml"
+  },
+  {
+    "title": "文春オンライン",
+    "label": "NEWS",
+    "url": "https://bunshun.jp/list/feed/rss"
+  },
+  {
+    "title": "PC Watch",
+    "label": "PC",
+    "url": "https://pc.watch.impress.co.jp/data/rss/1.0/pcw/feed.rdf"
+  },
+  { "title": "WinTab", "label": "PC", "url": "https://win-tab.net/feed/" },
+  {
+    "title": "Atmark IT",
+    "label": "Tech",
+    "url": "https://rss.itmedia.co.jp/rss/1.0/ait.xml"
+  },
+  {
+    "title": "IT media",
+    "label": "Tech",
+    "url": "https://rss.itmedia.co.jp/rss/1.0/ait.xml"
+  },
+  {
+    "title": "Yahoo IT",
+    "label": "Tech",
+    "url": "https://news.yahoo.co.jp/rss/categories/it.xml"
+  },
+  {
+    "title": "ケータイ Watch",
+    "label": "Tech",
+    "url": "https://k-tai.watch.impress.co.jp/data/rss/1.0/ktw/feed.rdf"
+  },
+  {
+    "title": "AUTOMATON",
+    "label": "game",
+    "url": "https://automaton-media.com/feed/"
+  },
+  {
+    "title": "GAME Watch",
+    "label": "game",
+    "url": "https://game.watch.impress.co.jp/data/rss/1.0/gmw/feed.rdf"
+  },
+  {
+    "title": "ITmedia TOP STORIES 最新記事一覧",
+    "label": "game",
+    "url": "https://rss.itmedia.co.jp/rss/2.0/topstory.xml"
+  },
+  {
+    "title": "映画 com",
+    "label": "エンタメ",
+    "url": "http://feeds.eiga.com/eiga_news"
+  }
+]
